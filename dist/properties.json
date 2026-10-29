@@ -1,0 +1,408 @@
+[
+  {
+    "id": "line-praca",
+    "name": "Line Praça da Árvore",
+    "neighborhood": "Praça da Árvore",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      1,
+      2
+    ],
+    "area": "31 a 40",
+    "status": "Em obras",
+    "delivery": "Mar/2028",
+    "description": "Apartamentos de 1 e 2 dormitórios para viver a Zona Sul.",
+    "amenities": [
+      "Piscina",
+      "Academia",
+      "Lavanderia",
+      "Pet place",
+      "Churrasqueira",
+      "Mini market"
+    ],
+    "highlight": "Consultar opções",
+    "address": "Endereço a confirmar com o atendimento",
+    "links": {
+      "book": "https://drive.google.com/drive/folders/12Upy9SZq4vu79Wi7NRaF3EdqxbYieZvY?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1mmF3xtJp3_I61c2jFBKG84nf56oGQSvL?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/line-praca-da-arvore/",
+      "imagens": "https://drive.google.com/drive/folders/1maVXS1qKV-2zdXyxrWNmms5jrjVf4wRr?usp=drive_link"
+    },
+    "image": "assets/line-praca.webp",
+    "facade": "assets/line-praca-fachada.webp"
+  },
+  {
+    "id": "atlas",
+    "name": "Atlas Sacomã",
+    "neighborhood": "Sacomã",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "41 a 45",
+    "status": "Lançamento",
+    "delivery": "Dez/2028",
+    "description": "Varanda, vaga e espaço para a sua rotina acontecer.",
+    "amenities": [
+      "Piscinas adulto e infantil",
+      "Academia",
+      "Espaço gourmet",
+      "Brinquedoteca",
+      "Pet place",
+      "Bicicletário"
+    ],
+    "highlight": "Vaga e varanda",
+    "address": "Endereço a confirmar com o atendimento",
+    "links": {
+      "book": "https://drive.google.com/drive/folders/1TtJzDx3HxrIJFZNOOT_2gN2lgFAIuXTl?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1L_NE0tRF-hqcfqkPgc7CpHFGlD3Gvq_8?usp=drive_link",
+      "imagens": "https://drive.google.com/drive/folders/1ULKaFo4rcPGEXFhi_KgZLzhHBcytaYsU?usp=drive_link"
+    },
+    "image": "assets/atlas.webp",
+    "facade": "assets/atlas-fachada.webp"
+  },
+  {
+    "id": "mob-campo",
+    "name": "MOB Campo Limpo",
+    "neighborhood": "Campo Limpo",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "38 a 39",
+    "status": "Lançamento",
+    "delivery": "Dez/2028",
+    "description": "Dois dormitórios, varanda e lazer para aproveitar todos os dias.",
+    "amenities": [
+      "Piscina",
+      "Coworking",
+      "Lavanderia",
+      "Academia",
+      "Espaço gourmet",
+      "Pet place"
+    ],
+    "highlight": "Com varanda",
+    "address": "Rua Rudolf Alt, 40",
+    "links": {
+      "map": "https://maps.app.goo.gl/y6KKoysciys8TGDm8",
+      "book": "https://drive.google.com/drive/folders/18iwHHeqhKSMNsLBsHYwmjXcevRAssh9e?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1GL3TGPPwSoKPaOH4mKJnmNR1uQRIJK1C?usp=drive_link",
+      "imagens": "https://drive.google.com/drive/folders/1pqLkrzvKF0vp7B-7xrJTc7WJjflPvsgx?usp=drive_link"
+    },
+    "image": "assets/mob-campo.webp",
+    "facade": "assets/mob-campo-fachada.webp"
+  },
+  {
+    "id": "sinfonia",
+    "name": "Sinfonia Santo Amaro",
+    "neighborhood": "Santo Amaro",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "42 a 46",
+    "status": "Lançamento",
+    "delivery": "Dez/2028",
+    "description": "Mais possibilidades para morar bem em Santo Amaro.",
+    "amenities": [
+      "Piscinas adulto e infantil",
+      "Coworking",
+      "Academia",
+      "Spa",
+      "Pet care",
+      "Salão de jogos"
+    ],
+    "highlight": "Varanda e opção de vaga",
+    "address": "Rua Ada Negri, 469",
+    "links": {
+      "map": "https://maps.app.goo.gl/CDc1u7gjrAudRs4x8",
+      "book": "https://drive.google.com/drive/folders/1coVBTtjg248LzNpOvzf1QetVqBGpMxxV?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1t-kBIxuf0CktRVPBWgj72k9_w0u1vcdz?usp=drive_link",
+      "imagens": "https://drive.google.com/drive/folders/1z6HkhqJCV0IUIX5V7Lqd71J72tx-7ioG?usp=drive_link"
+    },
+    "image": "assets/sinfonia.webp",
+    "facade": "assets/sinfonia-fachada.webp"
+  },
+  {
+    "id": "altus",
+    "name": "Altus Vila Prudente",
+    "neighborhood": "Vila Prudente",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "45",
+    "status": "Em obras",
+    "delivery": "Nov/2026",
+    "description": "Seu novo endereço na Vila Prudente, com lazer para toda a família.",
+    "amenities": [
+      "Piscina",
+      "Academia",
+      "Salão de festas",
+      "Churrasqueira",
+      "Playground",
+      "Espaço relax"
+    ],
+    "highlight": "2 dormitórios",
+    "address": "Rua Marcello Müller, 200",
+    "links": {
+      "map": "https://maps.app.goo.gl/X7iuomXZs5G68V5b6",
+      "book": "https://drive.google.com/drive/folders/1Ulq6w_-IrHL_kwcdeb370T8VDjIUQuU4?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1Zm7DWAMLgxAGA8FA_hzLldiJCcWfxT-T?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/altus-vila-prudente/",
+      "imagens": "https://drive.google.com/drive/folders/1Xm9LuQaYMppG0wve6Axu8MTbBE7DN9IQ?usp=drive_link"
+    },
+    "image": "assets/altus.webp",
+    "facade": "assets/altus-fachada.webp"
+  },
+  {
+    "id": "origem",
+    "name": "Origem Itaquera",
+    "neighborhood": "Itaquera",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "41",
+    "status": "Em obras",
+    "delivery": "Out/2027",
+    "description": "Dois dormitórios com vaga e lazer para viver mais momentos juntos.",
+    "amenities": [
+      "Piscina",
+      "Coworking",
+      "Quadra",
+      "Academia",
+      "Brinquedoteca",
+      "Pet place"
+    ],
+    "highlight": "Com vaga",
+    "address": "Rua Agrimensor Sugaya, 842",
+    "links": {
+      "map": "https://maps.app.goo.gl/L4pE2mDqSvwqYRKL8",
+      "book": "https://drive.google.com/drive/folders/1sjY3ghqC7RxeUc0lAYhmsezCLYq1jGeN?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1AKC8LZ7BPglz733qtBdclg3_nxN_mTxo?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/origem-itaquera/",
+      "imagens": "https://drive.google.com/drive/folders/1HMXOzCjEJRvkbdx57M-Gn4f-C6JaVXKh?usp=drive_link"
+    },
+    "image": "assets/origem.webp",
+    "facade": "assets/origem-fachada.webp"
+  },
+  {
+    "id": "serena",
+    "name": "Serena Residence",
+    "neighborhood": "Vila Sílvia",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "40",
+    "status": "Em obras",
+    "delivery": "Jul/2028",
+    "description": "Um lugar para desacelerar, com dois dormitórios e vaga.",
+    "amenities": [
+      "Piscina",
+      "Academia",
+      "Biblioteca",
+      "Playground",
+      "Pet place",
+      "Mini mercado"
+    ],
+    "highlight": "Com vaga",
+    "address": "Rua Nova Itarana, 11",
+    "links": {
+      "map": "https://maps.app.goo.gl/nUcwMFrDxaahYJqn7",
+      "book": "https://drive.google.com/drive/folders/1r2-SmXBdizWanc0PcQT72emt8vDoWmEy?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1O6IQEPXuRplFXgQxAjCebu36Sx4KTSTt?usp=drive_link",
+      "tour": "https://tour.emccamp.com/multi/serena-residence/",
+      "imagens": "https://drive.google.com/drive/folders/11IZjnbW1qZPZnUsMPMMOOVP4nBEfDkb8?usp=drive_link"
+    },
+    "image": "assets/serena.webp",
+    "facade": "assets/serena-fachada.webp"
+  },
+  {
+    "id": "vision",
+    "name": "Vision Penha",
+    "neighborhood": "Penha",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "47",
+    "status": "Pronto para morar",
+    "delivery": null,
+    "description": "Dois dormitórios, suíte e vaga para o seu próximo capítulo.",
+    "amenities": [
+      "Piscina",
+      "Coworking",
+      "Espaço yoga",
+      "Academia",
+      "Brinquedoteca",
+      "Espaço delivery"
+    ],
+    "highlight": "Suíte e vaga",
+    "address": "Av. Amador Bueno de Veiga, 1127",
+    "links": {
+      "map": "https://maps.app.goo.gl/P1jiDJvoCUNzkyyN6",
+      "book": "https://drive.google.com/drive/folders/1JasLNJ3R_WmYZptplWZHZaTTENuSbV5Y?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1u6XdnBxGl2yPX6BHmj6OcxFh-iPMJjtP?usp=drive_link",
+      "tour": "https://tour.emccamp.com/multi/vision-penha/",
+      "imagens": "https://drive.google.com/drive/folders/1DIQiqgfBflBLAmCIKhBu4DT1XKdZQXFN?usp=drive_link"
+    },
+    "image": "assets/vision.webp",
+    "facade": "assets/vision-fachada.webp"
+  },
+  {
+    "id": "mob-barra",
+    "name": "MOB Barra Funda",
+    "neighborhood": "Barra Funda",
+    "region": "oeste",
+    "regionLabel": "Zona Oeste",
+    "city": "São Paulo",
+    "beds": [
+      1,
+      2
+    ],
+    "area": "25 a 40",
+    "status": "Em obras",
+    "delivery": "Mar/2029",
+    "description": "Plantas de 1 e 2 dormitórios e uma nova forma de viver a Barra Funda.",
+    "amenities": [
+      "Piscina",
+      "Lavanderia",
+      "Academia",
+      "Quadra de areia",
+      "Brinquedoteca",
+      "Pet place"
+    ],
+    "highlight": "1 e 2 dormitórios",
+    "address": "Rua dos Americanos, 465",
+    "links": {
+      "map": "https://maps.app.goo.gl/G83Ke9yTttsutziN8",
+      "book": "https://drive.google.com/drive/folders/1cwTNSR14YyJJMvvhtHsLZa8t9EbJGw4_?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1pF930IzZ-q4gZB_kuIoHd3v5u7Jrugpp?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/mob-barra-funda/",
+      "imagens": "https://drive.google.com/drive/folders/1u0DPEc-6LT3FFMQw5oIWay5ECDdZN3gN?usp=drive_link"
+    },
+    "image": "assets/mob-barra.webp",
+    "facade": "assets/mob-barra-fachada.webp"
+  },
+  {
+    "id": "iconico",
+    "name": "Icônico Jaraguá",
+    "neighborhood": "Jaraguá",
+    "region": "norte",
+    "regionLabel": "Zona Norte",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "40 a 41",
+    "status": "Em obras",
+    "delivery": "Set/2028",
+    "description": "Dois dormitórios e espaços para compartilhar bons momentos.",
+    "amenities": [
+      "Piscina",
+      "Coworking",
+      "Academia",
+      "Espaço gourmet",
+      "Playground",
+      "Mini market"
+    ],
+    "highlight": "2 dormitórios",
+    "address": "Rua Camocim de São Félix, 44",
+    "links": {
+      "map": "https://maps.app.goo.gl/fnCgfyDHZWo8VdR67",
+      "book": "https://drive.google.com/drive/folders/1FSEi9NXIKRLqWEeplNAI-veJ-q9Z_6Wm?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1jX6v3GkubLBIRimrFEOFiIUoClX8QekF?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/iconico-jaragua/",
+      "imagens": "https://drive.google.com/drive/folders/1vjAnWpsErZGm_Y8E4GDm4YXwn9fFlf71?usp=drive_link"
+    },
+    "image": "assets/iconico.webp",
+    "facade": "assets/iconico-fachada.webp"
+  },
+  {
+    "id": "line-parada",
+    "name": "Line Parada Inglesa",
+    "neighborhood": "Tucuruvi",
+    "region": "norte",
+    "regionLabel": "Zona Norte",
+    "city": "São Paulo",
+    "beds": [
+      1,
+      2
+    ],
+    "area": "31 a 40",
+    "status": "Em obras",
+    "delivery": "Ago/2028",
+    "description": "Seu lugar na Zona Norte, com plantas de 1 e 2 dormitórios.",
+    "amenities": [
+      "Coworking",
+      "Lavanderia",
+      "Academia",
+      "Espaço yoga",
+      "Pet care",
+      "Brinquedoteca"
+    ],
+    "highlight": "1 e 2 dormitórios",
+    "address": "Rua do Tramway, 103",
+    "links": {
+      "map": "https://maps.app.goo.gl/mSusAAgitmgR54pm6",
+      "book": "https://drive.google.com/drive/folders/1_fyAjbpRCsvVDfOYBYPFJL1QW1l3EzMy?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1E_TX5W_MThg8UF76iHJzAzloeU8CXJNK?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/line-parada-inglesa/",
+      "imagens": "https://drive.google.com/drive/folders/1uKtQAyhNhhKGgNXeLo8Wo4rau0m8Fd8S?usp=drive_link"
+    },
+    "image": "assets/line-parada.webp",
+    "facade": "assets/line-parada-fachada.webp"
+  },
+  {
+    "id": "villagio",
+    "name": "Villagio dos Eucaliptos",
+    "neighborhood": "Medeiros",
+    "region": "jundiai",
+    "regionLabel": "Jundiaí",
+    "city": "Jundiaí",
+    "beds": [
+      2
+    ],
+    "area": "50",
+    "status": "Em obras",
+    "delivery": "Ago/2028",
+    "description": "Uma nova história em Jundiaí, com lazer e espaços ao ar livre.",
+    "amenities": [
+      "Piscina",
+      "Quadra",
+      "Academia",
+      "Playground",
+      "Pomar e horta",
+      "Pet place"
+    ],
+    "highlight": "Em Jundiaí",
+    "address": "Rua Primo Porcari, esquina com Rua Alfredo Abaid",
+    "links": {
+      "map": "https://maps.app.goo.gl/Kpmf9RYWXZn3iy6p6",
+      "book": "https://drive.google.com/drive/folders/1OvLuiprQVg5A2KaD3nPcmEhWufyEaFL8?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1XBJXn0lBg3Sz7_ToPVRJwmopVG0w2sJe?usp=drive_link",
+      "tour": "https://tour.emccamp.com/multi/villagio-dos-eucaliptos/",
+      "imagens": "https://drive.google.com/drive/folders/1NovdlnTbJPy2X83P9yIt3Lip8WRnPrHq?usp=drive_link"
+    },
+    "image": "assets/villagio.webp",
+    "facade": "assets/villagio-fachada.webp"
+  }
+]
