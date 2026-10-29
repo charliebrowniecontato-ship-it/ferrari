@@ -31,7 +31,7 @@ O catálogo possui agora HTML pré-renderizado, páginas próprias em `/imoveis/
 
 Menu por regiões, busca por bairro/nome sem distinção de acentos, filtros removíveis, parâmetros na URL, navegação de teclado, compartilhamento de imóvel, melhora de contraste, alvos de toque, animações de entrada e respeito à redução de movimento completam o refinamento. Não foram adicionados rastreadores ou integrações de analytics sem identificação de conta.
 
-Para regenerar o HTML e os arquivos de SEO após alterar o catálogo ou `src/home.html`, execute `python build_site.py`. A implementação estática permanece em `dist/`. Para verificar os metadados, links locais e sitemap, execute `python check_site.py`; para sintaxe, `node --check dist/app.js`, `node --check dist/site-ui.js` e `node --check dist/property-page.js`.
+Para regenerar os arquivos após alterar imagens ou catálogo, execute `python build_media.py` e depois `python build_site.py` (Python com Pillow e fontes DejaVu Sans). Ao editar apenas `src/home.html`, execute `python build_site.py`. A implementação estática permanece em `dist/`. Para verificar os metadados, links locais e sitemap, execute `python check_site.py`; para sintaxe, `node --check dist/app.js`, `node --check dist/site-ui.js` e `node --check dist/property-page.js`.
 
 
 ## Publicação na Vercel
@@ -42,6 +42,12 @@ O projeto é estático e não exige banco, chaves ou variáveis de ambiente. `ve
 
 Projeto Vercel: `ferrari-assessoria` (`prj_La1iEQf8J6Mna18ZbTSpc4MSc6h7`), equipe `charliebrowniecontato-7772`. Publicação pública: https://ferrari-assessoria.vercel.app.
 
-O domínio principal e o redirecionamento de `www` já estão vinculados ao projeto. Em 29/10/2026, o DNS externo ainda aponta para a hospedagem anterior e precisa ser atualizado conforme as recomendações atuais da Vercel. Não altere registros de e-mail.
+O domínio principal e o redirecionamento de `www` já estão vinculados ao projeto. Em 29/10/2026, o domínio principal passou a apontar para `216.198.79.1` e `www` para `6deef47b8bde0dbd.vercel-dns-017.com`, ambos validados pela Vercel. O domínio principal foi aberto em navegador, sem tela de autenticação. Não altere registros de e-mail.
 
 O repositório deve conter o código-fonte, os scripts de geração e `dist/`, que é a saída publicada. Após editar, regenere e valide os arquivos antes de fazer commit. O repositório https://github.com/charliebrowniecontato-ship-it/ferrari está conectado à Vercel. Commits na branch `main` acionam publicações de produção automaticamente.
+
+## Imagens e movimento
+
+Os originais oficiais disponíveis em `media-source/` geram versões WebP de 480 até 2000 px, conforme a resolução real, sem ampliar artificialmente as fotografias. Os demais imóveis preservam a resolução disponível no material fornecido. `srcset` e `sizes` escolhem a imagem por espaço e densidade da tela; a foto principal recebe preload responsivo e as imagens abaixo da dobra usam carregamento adiado. A origem dos cinco novos originais está em `media-source/sources.json`.
+
+As capas de compartilhamento são JPEG de 1200 × 630, com marca Ferrari, título e informações próprias de cada imóvel. A home usa `/assets/og-ferrari-v2.jpg`. Os títulos entram por linha, com sequência suave inspirada na referência EMCCAMP, usando a API nativa do navegador. O conteúdo permanece visível sem JavaScript e as animações são canceladas ao ativar redução de movimento. Não há vídeo automático nem biblioteca de animação externa.

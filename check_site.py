@@ -3,6 +3,7 @@ from pathlib import Path
 from urllib.parse import urlparse,unquote
 from collections import Counter
 import json,re,xml.etree.ElementTree as ET
+from PIL import Image
 root=Path('dist');base='https://ferrariassessoria.com'
 class HTML(HTMLParser):
  def __init__(self):super().__init__();self.tags=[]
@@ -22,10 +23,18 @@ for page in pages:
    link=a.get(attr,'');u=urlparse(link)
    if u.scheme in ['https','http','tel','mailto'] or link.startswith('#') or not link:continue
    if u.path.startswith('/'):assert resolve(u.path).is_file(),(page,link)
-  if t=='img':assert 'alt'in a and a.get('width') and a.get('height'),(page,'image accessibility/size')
+  if t=='img':
+   assert 'alt'in a and a.get('width') and a.get('height'),(page,'image accessibility/size')
+   for candidate in a.get('srcset','').split(','):
+    if not candidate.strip():continue
+    asset,width=candidate.strip().split();assert resolve(asset).is_file(),(page,asset)
+    assert Image.open(resolve(asset)).width==int(width.rstrip('w')),(page,'srcset width',asset)
  for data in re.findall(r'<script type="application/ld\+json">(.*?)</script>',s,re.S):json.loads(data)
  canonical=next(a['href'] for t,a in h.tags if t=='link' and a.get('rel')=='canonical');assert canonical.startswith(base)
  og=next(a['content'] for t,a in h.tags if t=='meta' and a.get('property')=='og:image');assert og.startswith(base+'/assets/') and resolve(urlparse(og).path).is_file()
+ assert Image.open(resolve(urlparse(og).path)).size==(1200,630),(page,'social card dimensions')
+ assert any(t=='meta' and a.get('name')=='description' and 50<len(a.get('content',''))<250 for t,a in h.tags),(page,'description')
+ assert any(t=='meta' and a.get('name')=='twitter:card' and a.get('content')=='summary_large_image' for t,a in h.tags),(page,'Twitter card')
  assert s.index('src="/site-ui.js"')<s.index('</head>')
  if page.name!='404.html':
   expected=base+'/'+str(page.parent.relative_to(root)).replace('\\','/').strip('./')+'/' if page.parent!=root else base+'/'

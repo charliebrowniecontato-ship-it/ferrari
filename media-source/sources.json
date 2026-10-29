@@ -1,0 +1,26 @@
+{
+  "retrieved": "2026-10-29",
+  "description": "Official EMCCAMP originals matching the supplied catalog images. Other photographs retain the user-supplied reference resolution.",
+  "images": [
+    {
+      "id": "line-praca",
+      "url": "https://emccamp.com.br/wp-content/uploads/2025/07/L1NE_PRACA_DA_ARVORE_PORTARIA_LR_RGB.jpg"
+    },
+    {
+      "id": "mob-campo",
+      "url": "https://emccamp.com.br/wp-content/uploads/2026/05/Design-sem-nome-55.png"
+    },
+    {
+      "id": "sinfonia",
+      "url": "https://emccamp.com.br/wp-content/uploads/2026/04/EMC_SAM_13_COND_1_FACHADA.webp"
+    },
+    {
+      "id": "altus",
+      "url": "https://emccamp.com.br/wp-content/uploads/2024/06/THUMB-Videos-produtos-5.png"
+    },
+    {
+      "id": "origem",
+      "url": "https://emccamp.com.br/wp-content/uploads/2025/05/ORIGEM_ITAQUERA_FACHADA_LR.jpg"
+    }
+  ]
+}

@@ -31,7 +31,25 @@
       "imagens": "https://drive.google.com/drive/folders/1maVXS1qKV-2zdXyxrWNmms5jrjVf4wRr?usp=drive_link"
     },
     "image": "assets/line-praca.webp",
-    "facade": "assets/line-praca-fachada.webp"
+    "facade": "assets/line-praca-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/line-praca-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/line-praca-960.webp",
+        "width": 960
+      },
+      {
+        "src": "assets/line-praca-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "assets/line-praca-2000.webp",
+        "width": 2000
+      }
+    ]
   },
   {
     "id": "atlas",
@@ -63,7 +81,17 @@
       "imagens": "https://drive.google.com/drive/folders/1ULKaFo4rcPGEXFhi_KgZLzhHBcytaYsU?usp=drive_link"
     },
     "image": "assets/atlas.webp",
-    "facade": "assets/atlas-fachada.webp"
+    "facade": "assets/atlas-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/atlas-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/atlas-700.webp",
+        "width": 700
+      }
+    ]
   },
   {
     "id": "mob-campo",
@@ -96,7 +124,25 @@
       "imagens": "https://drive.google.com/drive/folders/1pqLkrzvKF0vp7B-7xrJTc7WJjflPvsgx?usp=drive_link"
     },
     "image": "assets/mob-campo.webp",
-    "facade": "assets/mob-campo-fachada.webp"
+    "facade": "assets/mob-campo-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/mob-campo-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/mob-campo-960.webp",
+        "width": 960
+      },
+      {
+        "src": "assets/mob-campo-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "assets/mob-campo-1920.webp",
+        "width": 1920
+      }
+    ]
   },
   {
     "id": "sinfonia",
@@ -129,7 +175,25 @@
       "imagens": "https://drive.google.com/drive/folders/1z6HkhqJCV0IUIX5V7Lqd71J72tx-7ioG?usp=drive_link"
     },
     "image": "assets/sinfonia.webp",
-    "facade": "assets/sinfonia-fachada.webp"
+    "facade": "assets/sinfonia-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/sinfonia-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/sinfonia-960.webp",
+        "width": 960
+      },
+      {
+        "src": "assets/sinfonia-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "assets/sinfonia-2000.webp",
+        "width": 2000
+      }
+    ]
   },
   {
     "id": "altus",
@@ -163,7 +227,25 @@
       "imagens": "https://drive.google.com/drive/folders/1Xm9LuQaYMppG0wve6Axu8MTbBE7DN9IQ?usp=drive_link"
     },
     "image": "assets/altus.webp",
-    "facade": "assets/altus-fachada.webp"
+    "facade": "assets/altus-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/altus-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/altus-960.webp",
+        "width": 960
+      },
+      {
+        "src": "assets/altus-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "assets/altus-1920.webp",
+        "width": 1920
+      }
+    ]
   },
   {
     "id": "origem",
@@ -197,7 +279,25 @@
       "imagens": "https://drive.google.com/drive/folders/1HMXOzCjEJRvkbdx57M-Gn4f-C6JaVXKh?usp=drive_link"
     },
     "image": "assets/origem.webp",
-    "facade": "assets/origem-fachada.webp"
+    "facade": "assets/origem-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/origem-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/origem-960.webp",
+        "width": 960
+      },
+      {
+        "src": "assets/origem-1600.webp",
+        "width": 1600
+      },
+      {
+        "src": "assets/origem-2000.webp",
+        "width": 2000
+      }
+    ]
   },
   {
     "id": "serena",
@@ -231,7 +331,17 @@
       "imagens": "https://drive.google.com/drive/folders/11IZjnbW1qZPZnUsMPMMOOVP4nBEfDkb8?usp=drive_link"
     },
     "image": "assets/serena.webp",
-    "facade": "assets/serena-fachada.webp"
+    "facade": "assets/serena-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/serena-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/serena-700.webp",
+        "width": 700
+      }
+    ]
   },
   {
     "id": "vision",
@@ -265,7 +375,17 @@
       "imagens": "https://drive.google.com/drive/folders/1DIQiqgfBflBLAmCIKhBu4DT1XKdZQXFN?usp=drive_link"
     },
     "image": "assets/vision.webp",
-    "facade": "assets/vision-fachada.webp"
+    "facade": "assets/vision-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/vision-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/vision-700.webp",
+        "width": 700
+      }
+    ]
   },
   {
     "id": "mob-barra",
@@ -300,7 +420,17 @@
       "imagens": "https://drive.google.com/drive/folders/1u0DPEc-6LT3FFMQw5oIWay5ECDdZN3gN?usp=drive_link"
     },
     "image": "assets/mob-barra.webp",
-    "facade": "assets/mob-barra-fachada.webp"
+    "facade": "assets/mob-barra-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/mob-barra-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/mob-barra-700.webp",
+        "width": 700
+      }
+    ]
   },
   {
     "id": "iconico",
@@ -334,7 +464,17 @@
       "imagens": "https://drive.google.com/drive/folders/1vjAnWpsErZGm_Y8E4GDm4YXwn9fFlf71?usp=drive_link"
     },
     "image": "assets/iconico.webp",
-    "facade": "assets/iconico-fachada.webp"
+    "facade": "assets/iconico-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/iconico-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/iconico-700.webp",
+        "width": 700
+      }
+    ]
   },
   {
     "id": "line-parada",
@@ -369,7 +509,17 @@
       "imagens": "https://drive.google.com/drive/folders/1uKtQAyhNhhKGgNXeLo8Wo4rau0m8Fd8S?usp=drive_link"
     },
     "image": "assets/line-parada.webp",
-    "facade": "assets/line-parada-fachada.webp"
+    "facade": "assets/line-parada-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/line-parada-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/line-parada-598.webp",
+        "width": 598
+      }
+    ]
   },
   {
     "id": "villagio",
@@ -403,6 +553,16 @@
       "imagens": "https://drive.google.com/drive/folders/1NovdlnTbJPy2X83P9yIt3Lip8WRnPrHq?usp=drive_link"
     },
     "image": "assets/villagio.webp",
-    "facade": "assets/villagio-fachada.webp"
+    "facade": "assets/villagio-fachada.webp",
+    "responsive": [
+      {
+        "src": "assets/villagio-480.webp",
+        "width": 480
+      },
+      {
+        "src": "assets/villagio-689.webp",
+        "width": 689
+      }
+    ]
   }
 ]

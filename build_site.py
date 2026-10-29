@@ -14,7 +14,11 @@ def jsonld(obj):return '<script type="application/ld+json">'+json.dumps(obj,ensu
 agent={'@type':'RealEstateAgent','@id':BASE+'/#empresa','name':'Ferrari Assessoria Imobiliária','url':BASE+'/','logo':BASE+'/assets/ferrari-logo.png','telephone':'+55-11-99379-8622','areaServed':[{'@type':'City','name':'São Paulo'},{'@type':'City','name':'Jundiaí'}],'sameAs':['https://instagram.com/ferraricorretagem']}
 website={'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'Ferrari Assessoria Imobiliária','inLanguage':'pt-BR','publisher':{'@id':BASE+'/#empresa'}}
 def makehead(title,description,path='/',image='sinfonia',schema=None):
- url=BASE+path;og=BASE+f'/assets/social-{image}.jpg';im=Image.open(OUT/f'assets/social-{image}.jpg');w,h=im.size
+ url=BASE+path;social='og-ferrari-v2.jpg' if path=='/' else f'social-{image}.jpg';og=BASE+'/assets/'+social;im=Image.open(OUT/'assets'/social);w,h=im.size
+ image_alt='Ferrari Assessoria Imobiliária — imóveis em São Paulo e Jundiaí' if path=='/' else 'Perspectiva ilustrativa de '+byid[image]['name']
+ candidates=byid[image].get('responsive',[]);srcset=', '.join('/'+item['src']+' '+str(item['width'])+'w' for item in candidates)
+ image_sizes='(max-width: 900px) 100vw, 67vw' if path=='/' else '(max-width: 900px) 100vw, 55vw'
+ preload=f'<link rel="preload" as="image" href="/assets/{image}.webp" imagesrcset="{srcset}" imagesizes="{image_sizes}" fetchpriority="high">' if path=='/' or path.startswith('/imoveis/') else ''
  return f'''<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)}</title><meta name="description" content="{escape(description,quote=True)}">
@@ -23,16 +27,15 @@ def makehead(title,description,path='/',image='sinfonia',schema=None):
 <meta name="application-name" content="Ferrari Assessoria Imobiliária"><meta name="author" content="Ferrari Assessoria Imobiliária">
 <meta property="og:locale" content="pt_BR"><meta property="og:type" content="website"><meta property="og:site_name" content="Ferrari Assessoria Imobiliária">
 <meta property="og:title" content="{escape(title,quote=True)}"><meta property="og:description" content="{escape(description,quote=True)}"><meta property="og:url" content="{url}">
-<meta property="og:image" content="{og}"><meta property="og:image:secure_url" content="{og}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="{w}"><meta property="og:image:height" content="{h}"><meta property="og:image:alt" content="Perspectiva ilustrativa de {escape(byid[image]['name'],quote=True)}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{escape(title,quote=True)}"><meta name="twitter:description" content="{escape(description,quote=True)}"><meta name="twitter:image" content="{og}"><meta name="twitter:image:alt" content="Perspectiva ilustrativa de {escape(byid[image]['name'],quote=True)}">
-<link rel="icon" type="image/png" href="/assets/favicon.png"><link rel="apple-touch-icon" href="/assets/ferrari-logo.png">
-<link rel="preload" as="font" href="/assets/inter.woff2" type="font/woff2" crossorigin><link rel="preload" as="image" href="/assets/{image}.webp">
+<meta property="og:image" content="{og}"><meta property="og:image:secure_url" content="{og}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="{w}"><meta property="og:image:height" content="{h}"><meta property="og:image:alt" content="{escape(image_alt,quote=True)}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{escape(title,quote=True)}"><meta name="twitter:description" content="{escape(description,quote=True)}"><meta name="twitter:image" content="{og}"><meta name="twitter:image:alt" content="{escape(image_alt,quote=True)}">
+<link rel="icon" type="image/png" href="/assets/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="font" href="/assets/inter.woff2" type="font/woff2" crossorigin>{preload}
 <link rel="stylesheet" href="/styles.css"><script src="/site-ui.js" defer></script>
 {jsonld(schema) if schema else ''}
 </head>'''
-# Standard JPEG exports for social preview compatibility; source photographs unchanged.
-for p in props:
- Image.open(OUT/p['image']).convert('RGB').save(OUT/f"assets/social-{p['id']}.jpg",quality=91,optimize=True)
+# build_media.py produces JPEG social cards and responsive WebP variants first.
+assert (OUT/'assets/og-ferrari-v2.jpg').is_file(), 'Run python build_media.py first.'
 def card(p,controls=True):
  link=f"/imoveis/{p['id']}/";state='launch' if p['status']=='Lançamento' else 'ready' if p['status']=='Pronto para morar' else ''
  return f'''<article class="property-card"><div class="card-image-wrap"><a class="image-open" href="{link}" data-open="{p['id']}" aria-label="Conhecer {p['name']}"><img class="card-image" src="/{p['image']}" alt="Perspectiva ilustrativa de {p['name']}" width="700" height="440" loading="lazy"></a><span class="status-badge {state}">{p['status']}</span>{f'<button class="favorite" data-save="{p["id"]}" aria-label="Salvar {p["name"]} nos favoritos" aria-pressed="false"><i data-icon="heart"></i></button>' if controls else ''}</div><div class="card-body"><p class="card-location"><i data-icon="pin"></i> {p['neighborhood']} · {p['regionLabel']}</p><a class="card-title" href="{link}" data-open="{p['id']}"><h3>{p['name']}</h3></a><p class="card-highlight">{p['highlight']}</p><div class="card-specs"><span><i data-icon="bed"></i>{beds(p)}</span><span><i data-icon="area"></i>{p['area']} m²</span></div><div class="card-footer">{f'<label class="compare-option"><input type="checkbox" data-compare="{p["id"]}" aria-label="Comparar {p["name"]}"> Comparar</label>' if controls else '<span class="card-price-label">Condições sob consulta</span>'}<a class="card-more" href="{link}" data-open="{p['id']}">Conheça o imóvel <i data-icon="arrow-up-right"></i></a></div></div></article>'''
@@ -99,4 +102,24 @@ print(f'Built home, {len(props)} property pages, privacy, 404, sitemap, robots a
 # Keep deferred page scripts in the document head for valid document structure.
 for path in OUT.rglob('*.html'):
  text=path.read_text().replace('</head><script src="/property-page.js" defer></script>','<script src="/property-page.js" defer></script></head>')
+ # Preserve real, indexable heading text and the approved manual line breaks.
+ def heading(match):
+  level,attrs,content=match.groups()
+  if 'data-text-motion' in attrs:return match.group()
+  parts=re.split(r'<br\s*/?>',content)
+  wrapped=''.join('<span class="motion-line"><span class="motion-line-inner">'+line+'</span></span>' for line in parts)
+  return f'<h{level}{attrs} data-text-motion>{wrapped}</h{level}>'
+ text=re.sub(r'<h([12])([^>]*)>(.*?)</h\1>',heading,text,flags=re.S)
+ def responsive(match):
+  tag=match.group();src=re.search(r'src="/?assets/([^"/]+)\.webp"',tag)
+  if not src or src.group(1) not in byid:return tag
+  p=byid[src.group(1)];variants=p.get('responsive',[])
+  if not variants:return tag
+  srcset=', '.join('/'+v['src']+' '+str(v['width'])+'w' for v in variants)
+  sizes='(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw'
+  if 'hero-image' in tag:sizes='(max-width: 900px) 100vw, 67vw'
+  if 'page-photo' in tag:sizes='(max-width: 900px) 100vw, 55vw'
+  return tag[:-1]+f' srcset="{srcset}" sizes="{sizes}" decoding="async">'
+ text=re.sub(r'<img\b[^>]*>',responsive,text)
  path.write_text(text)
+(OUT/'site.webmanifest').write_text(json.dumps({'name':'Ferrari Assessoria Imobiliária','short_name':'Ferrari','lang':'pt-BR','start_url':'/','display':'standalone','background_color':'#ffffff','theme_color':'#ba242b','icons':[{'src':'/assets/icon-512.png','sizes':'512x512','type':'image/png','purpose':'any'}]},ensure_ascii=False))

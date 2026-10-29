@@ -10,14 +10,41 @@ window.FerrariUI=(()=>{const paths={
 'compare':'<path d="M8 3v18M16 3v18M4 7h8M12 17h8"/><circle cx="8" cy="7" r="2" fill="currentColor"/><circle cx="16" cy="17" r="2" fill="currentColor"/>','image':'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1.5"/><path d="m21 15-6-6L3 21"/>','play':'<path d="m9 5 11 7-11 7V5Z"/>','file':'<path d="M14 2H5v20h14V7l-5-5Z"/><path d="M14 2v6h5M8 12h8M8 16h8"/>'};
 const icon=name=>`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${paths[name]||paths['arrow-right']}</svg>`;
 function icons(root=document){root.querySelectorAll('[data-icon]').forEach(el=>el.outerHTML=icon(el.dataset.icon))}
-function init({page=false}={}){icons();const menu=document.getElementById('property-menu'),nav=document.getElementById('main-nav'),toggle=document.getElementById('menu-btn');
-if(page&&toggle)toggle.addEventListener('click',()=>{const opened=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',!opened);toggle.setAttribute('aria-label',opened?'Abrir menu':'Fechar menu');nav.classList.toggle('open',!opened)});
+function imageAttributes(property,sizes='(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw'){
+ const set=(property.responsive||[]).map(image=>`/${image.src} ${image.width}w`).join(', ');
+ return set?`srcset="${set}" sizes="${sizes}" decoding="async"`:'decoding="async"';
+}
+function initMotion(){
+ const preference=matchMedia('(prefers-reduced-motion: reduce)');
+ if(preference.matches||!('IntersectionObserver'in window)||!Element.prototype.animate)return;
+ const running=new Set();
+ const play=element=>{
+  if(preference.matches)return;
+  const lines=element.querySelectorAll('.motion-line-inner');
+  const targets=lines.length?[...lines]:[element];
+  targets.forEach((line,index)=>{
+   const animation=line.animate([
+    {opacity:.25,transform:'translate3d(-22px, 18px, 0)'},
+    {opacity:1,transform:'translate3d(0, 0, 0)'}
+   ],{duration:720,delay:index*95,easing:'cubic-bezier(.16,1,.3,1)',fill:'backwards'});
+   running.add(animation);animation.finished.catch(()=>{}).finally(()=>running.delete(animation));
+  });
+ };
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(entry.isIntersecting){play(entry.target);observer.unobserve(entry.target)}
+ }),{threshold:0,rootMargin:'0px 0px 45px 0px'});
+ document.querySelectorAll('[data-text-motion],.about-visual,.lifestyle-card,.journey-grid article,.match-preview').forEach(el=>{
+  if(!el.closest('dialog'))observer.observe(el);
+ });
+ preference.addEventListener('change',event=>{if(event.matches){observer.disconnect();running.forEach(animation=>animation.cancel());running.clear()}});
+}
+function init({page=false}={}){if(document.documentElement.dataset.ferrariUiReady)return;document.documentElement.dataset.ferrariUiReady='true';icons();const menu=document.getElementById('property-menu'),nav=document.getElementById('main-nav'),toggle=document.getElementById('menu-btn');
+if(toggle)toggle.addEventListener('click',event=>{event.stopPropagation();const opened=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',!opened);toggle.setAttribute('aria-label',opened?'Abrir menu':'Fechar menu');nav.classList.toggle('open',!opened)});
 document.addEventListener('click',e=>{if(menu?.open&&!menu.contains(e.target))menu.open=false;if(nav?.classList.contains('open')&&!nav.contains(e.target)&&!toggle.contains(e.target)){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu')}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(menu?.open){menu.open=false;menu.querySelector('summary').focus()}if(nav?.classList.contains('open')){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu');toggle.focus()}}});
-const onScroll=()=>{document.body.classList.toggle('has-scrolled',scrollY>240);if(!page){for(const id of ['imoveis','seu-jeito','sobre']){const section=document.getElementById(id);const active=section&&section.getBoundingClientRect().top<180&&section.getBoundingClientRect().bottom>180;const link=id==='imoveis'?menu?.querySelector('summary'):nav?.querySelector(`a[href="#${id}"]`);link?.classList.toggle('is-current',!!active)}}};window.addEventListener('scroll',onScroll,{passive:true});onScroll();
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver'in window){const observed=document.querySelectorAll('.section-top,.lifestyle-card,.match-section,.about-visual,.about-copy,.journey-grid article,.faq>div,.contact-inner,.related-section');observed.forEach((el,i)=>{el.dataset.reveal='';el.style.setProperty('--reveal-delay',(i%3)*55+'ms')});document.documentElement.classList.add('motion-ready');const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.06,rootMargin:'0px 0px 25px 0px'});observed.forEach(el=>io.observe(el));}
+const onScroll=()=>{document.body.classList.toggle('has-scrolled',scrollY>240);if(!page){for(const id of ['imoveis','seu-jeito','sobre']){const section=document.getElementById(id),rect=section?.getBoundingClientRect();const active=rect&&rect.top<180&&rect.bottom>180;const link=id==='imoveis'?menu?.querySelector('summary'):nav?.querySelector(`a[href="#${id}"]`);link?.classList.toggle('is-current',!!active)}}};let scrollPending=false;window.addEventListener('scroll',()=>{if(scrollPending)return;scrollPending=true;requestAnimationFrame(()=>{onScroll();scrollPending=false})},{passive:true});onScroll();initMotion();
 const signature=document.querySelector('.legacy');if(signature&&'IntersectionObserver'in window){const footerObserver=new IntersectionObserver(entries=>document.body.classList.toggle('at-signature',entries[0].isIntersecting),{threshold:0});footerObserver.observe(signature)}
 document.querySelectorAll('dialog').forEach(d=>{let lastFocus;d.addEventListener('beforetoggle',e=>{if(e.newState==='open')lastFocus=document.activeElement});d.addEventListener('close',()=>{if(lastFocus?.isConnected)lastFocus.focus({preventScroll:true})})});
 }
 async function share(title,url,button,notify){try{if(navigator.share){await navigator.share({title,url});return}if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(url);notify?.('Link do imóvel copiado.');return}}catch(e){if(e.name==='AbortError')return}let field=button.parentElement.querySelector('.share-copy-field');if(!field){field=document.createElement('input');field.className='share-copy-field';field.readOnly=true;field.setAttribute('aria-label','Link para compartilhar o imóvel');button.parentElement.appendChild(field)}field.value=url;field.focus();field.select();notify?.('Copie o link selecionado para compartilhar.');}
-return{icon,icons,init,share};})();
+return{icon,icons,init,share,imageAttributes};})();
