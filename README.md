@@ -44,4 +44,4 @@ Projeto Vercel: `ferrari-assessoria` (`prj_La1iEQf8J6Mna18ZbTSpc4MSc6h7`), equip
 
 O domínio principal e o redirecionamento de `www` já estão vinculados ao projeto. Em 29/10/2026, o DNS externo ainda aponta para a hospedagem anterior e precisa ser atualizado conforme as recomendações atuais da Vercel. Não altere registros de e-mail.
 
-O repositório deve conter o código-fonte, os scripts de geração e `dist/`, que é a saída publicada. Após editar, regenere e valide os arquivos antes de fazer commit. A conexão Git da Vercel deve acompanhar a branch principal para as próximas publicações.
+O repositório deve conter o código-fonte, os scripts de geração e `dist/`, que é a saída publicada. Após editar, regenere e valide os arquivos antes de fazer commit. O repositório https://github.com/charliebrowniecontato-ship-it/ferrari está conectado à Vercel. Commits na branch `main` acionam publicações de produção automaticamente.
