@@ -10,7 +10,7 @@ const svgPaths={
 'compare':'<path d="M8 3v18M16 3v18M4 7h8M12 17h8"/><circle cx="8" cy="7" r="2" fill="currentColor"/><circle cx="16" cy="17" r="2" fill="currentColor"/>','image':'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1.5"/><path d="m21 15-6-6L3 21"/>','play':'<path d="m9 5 11 7-11 7V5Z"/>','file':'<path d="M14 2H5v20h14V7l-5-5Z"/><path d="M14 2v6h5M8 12h8M8 16h8"/>'};
 const icon=name=>`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${svgPaths[name]||svgPaths['arrow-right']}</svg>`;
 function hydrateIcons(root=document){root.querySelectorAll('[data-icon]').forEach(e=>{const n=e.dataset.icon;e.outerHTML=icon(n)});}
-function wa(message){return `https://wa.me/5511993798622?text=${encodeURIComponent(message)}`}
+function wa(message){return `https://wa.me/5511932362552?text=${encodeURIComponent(message)}`}
 function hydrateLinks(){document.querySelectorAll('[data-wa]').forEach(a=>a.href=wa(a.dataset.wa))}
 const $=s=>document.querySelector(s);
 let properties=[],visibleCount=6,filters={region:'all',beds:'all',status:'all',saved:false,q:''},compare=new Set(),heroIndex=0;

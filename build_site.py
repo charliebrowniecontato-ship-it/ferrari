@@ -5,13 +5,13 @@ import json,re,shutil,xml.etree.ElementTree as ET
 from PIL import Image
 BASE='https://ferrariassessoria.com'
 OUT=Path('dist');source=Path('src/home.html').read_text();props=json.loads((OUT/'properties.json').read_text());byid={p['id']:p for p in props};ORDER=['sinfonia','atlas','vision','line-praca','mob-barra','origem','mob-campo','iconico','line-parada','serena','altus','villagio'];ordered=[byid[i] for i in ORDER]
-wa=lambda msg:'https://wa.me/5511993798622?text='+quote(msg,safe='')
+wa=lambda msg:'https://wa.me/5511932362552?text='+quote(msg,safe='')
 pageurl=lambda p:BASE+'/imoveis/'+p['id']+'/'
 beds=lambda p:'1 e 2 dormitórios' if len(p['beds'])>1 else f"{p['beds'][0]} dormitório"+('s' if p['beds'][0]>1 else '')
 def absolute_assets(s):
  return re.sub(r'((?:href|src)=")(assets/|styles\.css|app\.js|site-ui\.js)',r'\1/\2',s)
 def jsonld(obj):return '<script type="application/ld+json">'+json.dumps(obj,ensure_ascii=False).replace('</','<\\/')+'</script>'
-agent={'@type':'RealEstateAgent','@id':BASE+'/#empresa','name':'Ferrari Assessoria Imobiliária','url':BASE+'/','logo':BASE+'/assets/ferrari-logo.png','telephone':'+55-11-99379-8622','areaServed':[{'@type':'City','name':'São Paulo'},{'@type':'City','name':'Jundiaí'}],'sameAs':['https://instagram.com/ferraricorretagem']}
+agent={'@type':'RealEstateAgent','@id':BASE+'/#empresa','name':'Ferrari Assessoria Imobiliária','url':BASE+'/','logo':BASE+'/assets/ferrari-logo.png','telephone':'+55-11-93236-2552','areaServed':[{'@type':'City','name':'São Paulo'},{'@type':'City','name':'Jundiaí'}],'sameAs':['https://instagram.com/ferraricorretagem']}
 website={'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'Ferrari Assessoria Imobiliária','inLanguage':'pt-BR','publisher':{'@id':BASE+'/#empresa'}}
 def makehead(title,description,path='/',image='sinfonia',schema=None):
  url=BASE+path;social='og-ferrari-v2.jpg' if path=='/' else f'social-{image}.jpg';og=BASE+'/assets/'+social;im=Image.open(OUT/'assets'/social);w,h=im.size
@@ -74,7 +74,7 @@ for p in props:
  md=f"# {p['name']}\n\n{p['description']}\n\n- Região: {p['regionLabel']}, {p['city']}.\n- Bairro: {p['neighborhood']}.\n- Plantas: {rooms}.\n- Metragem informada no portfólio: {p['area']} m².\n- Fase: {p['status']}.\n- Entrega prevista: {p['delivery'] or 'Consultar disponibilidade da unidade pronta'}.\n- Diferencial: {p['highlight']}.\n\n## Lazer e conveniências\n\n"+'\n'.join('- '+a for a in p['amenities'])+f"\n\n## Atendimento\n\n- [Página do empreendimento]({pageurl(p)})\n- [Consultar condições pelo WhatsApp]({contact})\n\n{notes}\n"
  (target/'index.md').write_text(md)
 # Privacy is a real static page as well as the existing home dialog.
-privacy='''<main class="wrap privacy-page" id="inicio"><p class="eyebrow"><span></span> PRIVACIDADE</p><h1>Uma conversa transparente.</h1><p>Este site apresenta imóveis e direciona o visitante para atendimento externo. Não há formulário de cadastro ou análise de crédito no site.</p><h2>Favoritos neste navegador</h2><p>Os imóveis favoritos ficam armazenados somente no navegador utilizado. Você pode apagá-los na opção Privacidade da página inicial ou nas configurações do seu navegador. Não são enviados para um servidor do site.</p><h2>Contato e serviços externos</h2><p>Ao acessar WhatsApp, Instagram, mapas, tours ou materiais dos empreendimentos, você utiliza serviços externos, que possuem suas próprias políticas de privacidade. Informações enviadas pelo WhatsApp são compartilhadas diretamente por você com o atendimento.</p><h2>Suas escolhas</h2><p>Você pode navegar pelo catálogo sem informar seus dados pessoais. Se tiver dúvidas sobre informações compartilhadas com o atendimento, entre em contato pelo WhatsApp comercial (11) 99379-8622.</p><a class="btn btn-red" href="/">Voltar ao site <i data-icon="arrow-right"></i></a></main>'''
+privacy='''<main class="wrap privacy-page" id="inicio"><p class="eyebrow"><span></span> PRIVACIDADE</p><h1>Uma conversa transparente.</h1><p>Este site apresenta imóveis e direciona o visitante para atendimento externo. Não há formulário de cadastro ou análise de crédito no site.</p><h2>Favoritos neste navegador</h2><p>Os imóveis favoritos ficam armazenados somente no navegador utilizado. Você pode apagá-los na opção Privacidade da página inicial ou nas configurações do seu navegador. Não são enviados para um servidor do site.</p><h2>Contato e serviços externos</h2><p>Ao acessar WhatsApp, Instagram, mapas, tours ou materiais dos empreendimentos, você utiliza serviços externos, que possuem suas próprias políticas de privacidade. Informações enviadas pelo WhatsApp são compartilhadas diretamente por você com o atendimento.</p><h2>Suas escolhas</h2><p>Você pode navegar pelo catálogo sem informar seus dados pessoais. Se tiver dúvidas sobre informações compartilhadas com o atendimento, entre em contato pelo WhatsApp comercial (11) 93236-2552.</p><a class="btn btn-red" href="/">Voltar ao site <i data-icon="arrow-right"></i></a></main>'''
 pt=OUT/'privacidade';pt.mkdir(exist_ok=True);(pt/'index.html').write_text(absolute_assets('<!doctype html><html lang="pt-BR">'+makehead('Privacidade | Ferrari Assessoria Imobiliária','Entenda como funcionam os favoritos locais e os links de atendimento da Ferrari Assessoria Imobiliária.','/privacidade/')+'<script src="/property-page.js" defer></script><body>'+header+privacy+footer+'</body></html>'))
 # A host-supported custom 404 does not send visitors to a broken app shell.
 notfound='''<main class="wrap not-found" id="inicio"><p class="eyebrow"><span></span> ENDEREÇO NÃO ENCONTRADO</p><h1>Vamos encontrar<br>outro caminho?</h1><p>Essa página não está disponível. Seu próximo imóvel pode estar no nosso catálogo.</p><a class="btn btn-red" href="/#imoveis">Explorar os imóveis <i data-icon="arrow-right"></i></a></main>'''
@@ -90,7 +90,7 @@ llms='''# Ferrari Assessoria Imobiliária
 
 > Catálogo de empreendimentos EMCCAMP em São Paulo e Jundiaí, com atendimento da Ferrari Assessoria Imobiliária.
 
-Telefone/WhatsApp comercial: +55 11 99379-8622. Instagram: @ferraricorretagem.
+Telefone/WhatsApp comercial: +55 11 93236-2552. Instagram: @ferraricorretagem.
 
 As metragens do catálogo são as do portfólio Ferrari, edição setembro/2026. Os status de Vision Penha e MOB Barra Funda seguem o material institucional EMCCAMP fornecido em outubro/2026. Valores, disponibilidade, endereço, itens incluídos e previsões devem ser confirmados com o atendimento. Não há aprovação ou simulação automática de crédito neste site.
 

@@ -22,6 +22,6 @@ Seu lugar na Zona Norte, com plantas de 1 e 2 dormitórios.
 ## Atendimento
 
 - [Página do empreendimento](https://ferrariassessoria.com/imoveis/line-parada/)
-- [Consultar condições pelo WhatsApp](https://wa.me/5511993798622?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Line%20Parada%20Inglesa%2C%20em%20Tucuruvi.%20Gostaria%20de%20consultar%20valores%2C%20disponibilidade%20e%20condi%C3%A7%C3%B5es.)
+- [Consultar condições pelo WhatsApp](https://wa.me/5511932362552?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Line%20Parada%20Inglesa%2C%20em%20Tucuruvi.%20Gostaria%20de%20consultar%20valores%2C%20disponibilidade%20e%20condi%C3%A7%C3%B5es.)
 
 Imagens ilustrativas. Metragens, disponibilidade, endereço, previsões de entrega e condições comerciais devem ser confirmados com o atendimento e a documentação do empreendimento.
