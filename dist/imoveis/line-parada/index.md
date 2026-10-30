@@ -5,10 +5,10 @@ Seu lugar na Zona Norte, com plantas de 1 e 2 dormitórios.
 - Região: Zona Norte, São Paulo.
 - Bairro: Tucuruvi.
 - Plantas: 1 e 2 dormitórios.
-- Metragem informada no portfólio: 31 a 40 m².
+- Metragem informada no book: 30,85 a 40,21 m².
 - Fase: Em obras.
 - Entrega prevista: Ago/2028.
-- Diferencial: 1 e 2 dormitórios.
+- Diferencial: Plantas compactas.
 
 ## Lazer e conveniências
 

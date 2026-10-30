@@ -1,23 +1,23 @@
 # Villagio dos Eucaliptos
 
-Uma nova história em Jundiaí, com lazer e espaços ao ar livre.
+Casas de dois dormitórios com suíte e lazer em condomínio no bairro Medeiros.
 
 - Região: Jundiaí, Jundiaí.
 - Bairro: Medeiros.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 50 m².
+- Metragem informada no book: 50,73 a 58,78 m².
 - Fase: Em obras.
 - Entrega prevista: Ago/2028.
-- Diferencial: Em Jundiaí.
+- Diferencial: Casas com suíte.
 
 ## Lazer e conveniências
 
-- Piscina
-- Quadra
+- Piscina adulto e infantil
 - Academia
-- Playground
-- Pomar e horta
+- Salão de festas
+- Churrasqueira
 - Pet place
+- Pomar e horta
 
 ## Atendimento
 

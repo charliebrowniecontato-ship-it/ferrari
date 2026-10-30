@@ -1,23 +1,23 @@
 # Serena Residence
 
-Um lugar para desacelerar, com dois dormitórios e vaga.
+Dois dormitórios e lazer para viver seus próximos momentos na Vila Sílvia.
 
 - Região: Zona Leste, São Paulo.
 - Bairro: Vila Sílvia.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 40 m².
+- Metragem informada no book: 40 a 41 m².
 - Fase: Em obras.
 - Entrega prevista: Jul/2028.
-- Diferencial: Com vaga.
+- Diferencial: Lazer em condomínio.
 
 ## Lazer e conveniências
 
 - Piscina
-- Academia
-- Biblioteca
+- Salão de festas
+- Churrasqueira
 - Playground
+- Brinquedoteca
 - Pet place
-- Mini mercado
 
 ## Atendimento
 

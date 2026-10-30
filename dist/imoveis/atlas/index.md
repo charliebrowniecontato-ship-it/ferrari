@@ -5,7 +5,7 @@ Varanda, vaga e espaço para a sua rotina acontecer.
 - Região: Zona Sul, São Paulo.
 - Bairro: Sacomã.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 41 a 45 m².
+- Metragem informada no book: 41,77 a 45,27 m².
 - Fase: Lançamento.
 - Entrega prevista: Dez/2028.
 - Diferencial: Vaga e varanda.

@@ -5,19 +5,19 @@ Mais possibilidades para morar bem em Santo Amaro.
 - Região: Zona Sul, São Paulo.
 - Bairro: Santo Amaro.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 42 a 46 m².
+- Metragem informada no book: 41,17 a 69,85 m².
 - Fase: Lançamento.
 - Entrega prevista: Dez/2028.
 - Diferencial: Varanda e opção de vaga.
 
 ## Lazer e conveniências
 
-- Piscinas adulto e infantil
+- Piscina adulto e infantil
 - Coworking
 - Academia
-- Spa
+- Quadra de areia
 - Pet care
-- Salão de jogos
+- Brinquedoteca
 
 ## Atendimento
 

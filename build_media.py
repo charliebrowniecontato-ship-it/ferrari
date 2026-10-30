@@ -61,11 +61,11 @@ def main():
             if width > photo.width:
                 continue
             image = photo.resize((width, round(width * photo.height / photo.width)), Image.Resampling.LANCZOS)
-            name = f"{prop['id']}-{width}.webp"
+            name = f"{prop['id']}-r3-{width}.webp"
             image.save(ASSETS / name, 'WEBP', quality=82 if width <= 960 else 86, method=6)
             variants.append({'src': 'assets/' + name, 'width': width})
         prop['responsive'] = variants
-        social_card(photo, prop['name'], prop['neighborhood'] + ' · ' + prop['city'] + ' | ' + prop['area'] + ' m²', ASSETS / f"social-{prop['id']}.jpg")
+        social_card(photo, prop['name'], prop['neighborhood'] + ' · ' + prop['city'] + ' | ' + prop['area'] + ' m²', ASSETS / f"social-{prop['id']}-r3.jpg")
         if prop['id'] == 'sinfonia':
             social_card(photo, 'Seu próximo capítulo começa em casa.', 'Imóveis em São Paulo e Jundiaí. Conheça as possibilidades com a Ferrari.', ASSETS / 'og-ferrari-v2.jpg', home=True)
     CATALOG.write_text(json.dumps(props, ensure_ascii=False, indent=2) + '\n')

@@ -1,14 +1,14 @@
 # Vision Penha
 
-Dois dormitórios, suíte e vaga para o seu próximo capítulo.
+Dois dormitórios, opções com suíte e lazer para seu próximo capítulo.
 
 - Região: Zona Leste, São Paulo.
 - Bairro: Penha.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 47 m².
+- Metragem informada no book: 43 a 47 m².
 - Fase: Pronto para morar.
-- Entrega prevista: Consultar disponibilidade da unidade pronta.
-- Diferencial: Suíte e vaga.
+- Entrega prevista: Confirmar com o atendimento.
+- Diferencial: Opções com suíte.
 
 ## Lazer e conveniências
 

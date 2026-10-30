@@ -5,10 +5,10 @@ Seu novo endereço na Vila Prudente, com lazer para toda a família.
 - Região: Zona Leste, São Paulo.
 - Bairro: Vila Prudente.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 45 m².
+- Metragem informada no book: 42 a 45 m².
 - Fase: Em obras.
 - Entrega prevista: Nov/2026.
-- Diferencial: 2 dormitórios.
+- Diferencial: Piscina e lazer.
 
 ## Lazer e conveniências
 

@@ -7,17 +7,17 @@ Site institucional e catálogo imobiliário estático. Código sem dependências
 - `dist/index.html`: página principal, seções institucionais e diálogos.
 - `dist/styles.css`: identidade visual e layouts responsivos.
 - `dist/app.js`: filtros, favoritos locais, comparação, destaques e busca guiada.
-- `dist/properties.json`: cadastro de 12 empreendimentos e links oficiais fornecidos.
+- `dist/properties.json`: cadastro de 14 empreendimentos e links oficiais fornecidos.
 - `dist/assets/`: logos e imagens extraídas dos arquivos de referência fornecidos pelo usuário.
 
 ## Fontes
 
-Portfólio Ferrari EMCCAMP, edição setembro/2026, e captura do site EMCCAMP fornecida em 29/10/2026. Os status de Vision Penha (pronto para morar) e MOB Barra Funda (em obras) seguem a captura institucional, mais recente. Endereços divergentes de Atlas Sacomã e Line Praça da Árvore foram omitidos das fichas e devem ser confirmados pelo atendimento. Metragens apresentadas seguem o portfólio Ferrari; possibilidades e disponibilidade devem ser validadas por unidade. Não foram criados preços, depoimentos ou credenciais profissionais.
+Portfólio Ferrari EMCCAMP, edição setembro/2026, e captura do site EMCCAMP fornecida em 29/10/2026. Os status de Vision Penha (pronto para morar) e MOB Barra Funda (em obras) seguem a captura institucional, mais recente. A revisão de 30/10/2026 usa os books fornecidos no pacote da Equipe Ferrari para endereços, metragens e diferenciais; inclui tipologias especiais e gardens quando indicados. As fases e entregas sem nova documentação permanecem sujeitas a confirmação; possibilidades e disponibilidade devem ser validadas por unidade. Não foram criados preços, depoimentos ou credenciais profissionais.
 
 ## Operação
 
 WhatsApp comercial: +55 11 93236-2552. Instagram: @ferraricorretagem.
-Os contatos são iniciados pelo visitante em links externos, sem formulário ou backend de coleta. Favoritos permanecem apenas no navegador do visitante. A busca guiada filtra o catálogo; não realiza análise ou simulação de crédito.
+Os contatos são iniciados pelo visitante em links externos, sem backend de coleta. O formulário de preparação monta uma mensagem no navegador, revisada pelo visitante antes de abrir o WhatsApp; não persiste respostas nem avalia crédito. Favoritos permanecem apenas no navegador do visitante. A busca guiada filtra o catálogo; não realiza análise ou simulação de crédito.
 
 ## Verificação
 
@@ -27,7 +27,7 @@ Sintaxe JavaScript; verificação dos arquivos e referências locais; catálogo,
 
 A tarja Legacy foi reproduzida a partir do site Circuito Poty fornecido, com link para https://www.legacygrowthpartner.com.br/ e efeito dourado ao passar o mouse. A identidade e o visual principal Ferrari foram preservados.
 
-O catálogo possui agora HTML pré-renderizado, páginas próprias em `/imoveis/<id>/`, links rastreáveis, títulos e descrições únicos, URLs canônicas, Open Graph/Twitter com imagens JPEG, JSON-LD, sitemap de 14 URLs e documentação textual em `/llms.txt`, `/llm.txt` e `/llms-full.txt`. O sitemap facilita a descoberta das páginas; a indexação depende dos mecanismos de busca.
+O catálogo possui agora HTML pré-renderizado, páginas próprias em `/imoveis/<id>/`, links rastreáveis, títulos e descrições únicos, URLs canônicas, Open Graph/Twitter com imagens JPEG, JSON-LD, sitemap de 18 URLs e documentação textual em `/llms.txt`, `/llm.txt` e `/llms-full.txt`. O sitemap facilita a descoberta das páginas; a indexação depende dos mecanismos de busca.
 
 Menu por regiões, busca por bairro/nome sem distinção de acentos, filtros removíveis, parâmetros na URL, navegação de teclado, compartilhamento de imóvel, melhora de contraste, alvos de toque, animações de entrada e respeito à redução de movimento completam o refinamento. Não foram adicionados rastreadores ou integrações de analytics sem identificação de conta.
 
@@ -51,3 +51,20 @@ O repositório deve conter o código-fonte, os scripts de geração e `dist/`, q
 Os originais oficiais disponíveis em `media-source/` geram versões WebP de 480 até 2000 px, conforme a resolução real, sem ampliar artificialmente as fotografias. Os demais imóveis preservam a resolução disponível no material fornecido. `srcset` e `sizes` escolhem a imagem por espaço e densidade da tela; a foto principal recebe preload responsivo e as imagens abaixo da dobra usam carregamento adiado. A origem dos cinco novos originais está em `media-source/sources.json`.
 
 As capas de compartilhamento são JPEG de 1200 × 630, com marca Ferrari, título e informações próprias de cada imóvel. A home usa `/assets/og-ferrari-v2.jpg`. Os títulos entram por linha, com sequência suave inspirada na referência EMCCAMP, usando a API nativa do navegador. O conteúdo permanece visível sem JavaScript e as animações são canceladas ao ativar redução de movimento. Não há vídeo automático nem biblioteca de animação externa.
+
+
+## Reunião de 29/10 — aplicação no site em 30/10/2026
+
+- Catálogo de 14 empreendimentos: View Parque Ecológico e Nostro Mooca incluídos a partir dos respectivos books; Vision Penha já existia. A transcrição usa “Viu”, e a identificação como View é apoiada pelo material recebido, sem transformar isso em confirmação verbal.
+- `catalog-source.json` é a fonte editável. `python build_data.py`, `python build_media.py`, `python build_site.py` regeneram o catálogo, as mídias e todas as páginas. `build_site.py` chama `build_extras.py` para atendimento e materiais.
+- `/atendimento/`: três passos para preferências, momento e resumo. Renda e entrada são opcionais, não bloqueiam ninguém e não são usadas para classificação ou decisão de crédito. O visitante pode ir direto ao WhatsApp, sem preencher o roteiro. Nada é enviado automaticamente, salvo em servidor ou armazenado localmente pelo formulário. A URL só recebe identificador público de imóvel/região/dormitórios.
+- `/materiais/`: busca por bairro/empreendimento e filtro por região, apresentações/tours existentes, ficha compartilhável e tabelas de referência identificadas como out/2026 e solicitação de tabela vigente. A pasta de Altus continha referência de agosto e não é apresentada como tabela vigente. Os books externos abriram sem redirecionamento para login no teste HTTP de 30/10; a permanência do acesso depende do proprietário dos arquivos.
+- Fotos da galeria foram extraídas do book correspondente. `media-source/audit-20261030.json` registra arquivo, SHA-256, xref e legenda. `import_materials.py /caminho/arquivo.zip` reproduz a extração exclusivamente para a edição revisada. As tabelas de vendas e o ZIP não são publicados. Não há preços, estoque ou condições de outubro apresentados como atuais.
+- Nostro: a fase e a entrega não foram comprovadas no pacote, portanto aparecem como consulta ao atendimento. Books e tabelas podem ter faixas de área distintas porque não representam o mesmo conjunto de unidades; a faixa do book não constitui oferta de estoque.
+- Fotos WebP responsivas, sem ampliar a resolução original, galerias com acesso à imagem ampliada, OG por imóvel 1200×630, títulos/canônicas/JSON-LD, sitemap de 18 páginas e textos LLM atualizados. Sem scripts externos ou bibliotecas de formulário.
+
+## Dependências para próximas etapas comerciais
+
+A reunião também propõe CRM/API, dashboard de aquisição, campanhas, eventual SDR e jornada individual por corretor. Nenhuma dessas integrações é apresentada como ativa. Para executá-las, faltam o acesso e identificação técnica do CRM, contas de mídia/analytics e definição de responsáveis, eventos e funil. Doni/Malu devem confirmar os destinos das quatro landing pages, a rotina de atualização dos materiais e a fase/entrega do Nostro e do View. Não foram inferidos IDs de analytics, chaves, permissões, taxas bancárias ou regras de crédito.
+
+O arquivo mais recente com sufixo `(2).zip` não pôde ser aberto nesta sessão. A revisão foi feita com o pacote anterior disponível, recebido em 29/10/2026; novos materiais precisam ser conferidos após o reenvio.

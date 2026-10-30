@@ -1,0 +1,255 @@
+[
+  {
+    "property": "line-praca",
+    "book": "EMCCAMP - EQUIPE FERRARI/LINE PRAÇA DA ÁRVORE /BOOK LINE Praça da Arvore.pdf",
+    "sha256": "4cb6418090b7d8d86d520313515a5cf3c75392bb1e8b85955564f6ac194cefed",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 963,
+        "asset": "assets/line-praca-gallery-1.webp",
+        "caption": "Piscina"
+      },
+      {
+        "xref": 1232,
+        "asset": "assets/line-praca-gallery-2.webp",
+        "caption": "Sugestão de decoração"
+      }
+    ],
+    "primary_source": "previously supplied EMCCAMP image, matched against book"
+  },
+  {
+    "property": "atlas",
+    "book": "EMCCAMP - EQUIPE FERRARI/ATLAS/BOOK Atlas Sacomã.pdf",
+    "sha256": "d816f05723545df7cdef545f7a02c8db5e80099760a5e945b2f985f06941f0a6",
+    "reviewed": "2026-10-30",
+    "images": [],
+    "primary_source": "previously supplied EMCCAMP image, matched against book"
+  },
+  {
+    "property": "mob-campo",
+    "book": "EMCCAMP - EQUIPE FERRARI/MOB CAMPO LIMPO/BOOK MOB Campo LImpo.pdf",
+    "sha256": "5f2e457d930c55f3722f3e797c0a086ea06f5a8b5df4cf0ba09f6bdc1ee453f7",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 173,
+        "asset": "assets/mob-campo-gallery-1.webp",
+        "caption": "Piscina"
+      },
+      {
+        "xref": 177,
+        "asset": "assets/mob-campo-gallery-2.webp",
+        "caption": "Academia"
+      }
+    ],
+    "primary_source": "previously supplied EMCCAMP image, matched against book"
+  },
+  {
+    "property": "sinfonia",
+    "book": "EMCCAMP - EQUIPE FERRARI/SINFÔNIA/BOOK Sinfônia.pdf",
+    "sha256": "352eecc38a5b98c5b32c67d5460eaf9cfe5f1d4668665d377f0c50c76c48edc3",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 90,
+        "asset": "assets/sinfonia-gallery-1.webp",
+        "caption": "Piscina"
+      },
+      {
+        "xref": 97,
+        "asset": "assets/sinfonia-gallery-2.webp",
+        "caption": "Academia"
+      }
+    ],
+    "primary_source": "previously supplied EMCCAMP image, matched against book"
+  },
+  {
+    "property": "altus",
+    "book": "EMCCAMP - EQUIPE FERRARI/ALTUS/BOOK ALTUS.pdf",
+    "sha256": "2e5b418975915f555b15d9ef295b04ba868d02502cd2b0384532467366cfff62",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 164,
+        "asset": "assets/altus-gallery-1.webp",
+        "caption": "Salão de festas"
+      },
+      {
+        "xref": 192,
+        "asset": "assets/altus-gallery-2.webp",
+        "caption": "Piscina"
+      }
+    ],
+    "primary_source": "previously supplied EMCCAMP image, matched against book"
+  },
+  {
+    "property": "origem",
+    "book": "EMCCAMP - EQUIPE FERRARI/ORIGEM ITAQUERA/Book ORIGEM ITAQUERA.pdf",
+    "sha256": "cbec8d050ce00996a87c693d9ffcd98aa73823b9c36b1fae2618d4b3cc4649bb",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 209,
+        "asset": "assets/origem-gallery-1.webp",
+        "caption": "Piscina"
+      },
+      {
+        "xref": 255,
+        "asset": "assets/origem-gallery-2.webp",
+        "caption": "Salão de festas"
+      }
+    ],
+    "primary_source": "previously supplied EMCCAMP image, matched against book"
+  },
+  {
+    "property": "serena",
+    "book": "EMCCAMP - EQUIPE FERRARI/SERENA/Book Serena.pdf",
+    "sha256": "bc2200a0c8022a11b74fa6262a3a275447e6c9f4d5b83a51370c06a95e4e9b1b",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 161,
+        "asset": "assets/serena-gallery-1.webp",
+        "caption": "Piscina"
+      },
+      {
+        "xref": 243,
+        "asset": "assets/serena-gallery-2.webp",
+        "caption": "Academia"
+      }
+    ],
+    "primary_xref": 437,
+    "primary_source": "book image"
+  },
+  {
+    "property": "vision",
+    "book": "EMCCAMP - EQUIPE FERRARI/VISION PENHA/Book Vision Penha (1).pdf",
+    "sha256": "f59fdcc689679f8fbcd2559301eac0a8fa62a033be92a1b874064d9a0497519b",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 236,
+        "asset": "assets/vision-gallery-1.webp",
+        "caption": "Salão de festas"
+      },
+      {
+        "xref": 274,
+        "asset": "assets/vision-gallery-2.webp",
+        "caption": "Piscina"
+      }
+    ],
+    "primary_xref": 224,
+    "primary_source": "book image"
+  },
+  {
+    "property": "mob-barra",
+    "book": "EMCCAMP - EQUIPE FERRARI/MOB BARRA FUNDA/Book Mob Barra Funda.pdf",
+    "sha256": "17b3032cc39972b3a562c8bfb6f38a356d80cbdf6cada19d9f2f7e007f0ee721",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 277,
+        "asset": "assets/mob-barra-gallery-1.webp",
+        "caption": "Academia"
+      },
+      {
+        "xref": 447,
+        "asset": "assets/mob-barra-gallery-2.webp",
+        "caption": "Sugestão de decoração"
+      }
+    ],
+    "primary_xref": 178,
+    "primary_source": "book image"
+  },
+  {
+    "property": "iconico",
+    "book": "EMCCAMP - EQUIPE FERRARI/ICÔNICO/BOOK ICÔNICO_EQUIPE BIBI.pdf",
+    "sha256": "585cb1fc09b114ef13b189d71ffe6e0e9ca19310592b0c1294536e58935dbc86",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 187,
+        "asset": "assets/iconico-gallery-1.webp",
+        "caption": "Piscina"
+      }
+    ],
+    "primary_xref": 98,
+    "primary_source": "book image"
+  },
+  {
+    "property": "line-parada",
+    "book": "EMCCAMP - EQUIPE FERRARI/LINE PARADA INGLESA/BOOK Line Parada Inglesa.pdf",
+    "sha256": "c1ba038c50091607b62f4245804e1b295db8f8d1aae7a8a8fc12bb4e63205715",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 192,
+        "asset": "assets/line-parada-gallery-1.webp",
+        "caption": "Salão de festas"
+      },
+      {
+        "xref": 207,
+        "asset": "assets/line-parada-gallery-2.webp",
+        "caption": "Academia"
+      }
+    ],
+    "primary_xref": 186,
+    "primary_source": "book image"
+  },
+  {
+    "property": "villagio",
+    "book": "EMCCAMP - EQUIPE FERRARI/VILLAGIO/Book Villagio.pdf",
+    "sha256": "faab99c9a90a438761e967661a30f1e0cd5a164ce737c3d75ca0efc08c42b2dd",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 118,
+        "asset": "assets/villagio-gallery-1.webp",
+        "caption": "Salão de festas"
+      },
+      {
+        "xref": 143,
+        "asset": "assets/villagio-gallery-2.webp",
+        "caption": "Piscina"
+      }
+    ],
+    "primary_xref": 83,
+    "primary_source": "book image"
+  },
+  {
+    "property": "view",
+    "book": "EMCCAMP - EQUIPE FERRARI/VIEW PARQUE ECOLÔGICO/BOOK View Parque Ecolôgico.pdf",
+    "sha256": "c13006e4c94556c22e12dd7324ba4669de4928b2c974d255d5b2dca94d86da90",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 97,
+        "asset": "assets/view-gallery-1.webp",
+        "caption": "Piscina"
+      },
+      {
+        "xref": 138,
+        "asset": "assets/view-gallery-2.webp",
+        "caption": "Salão de festas"
+      }
+    ],
+    "primary_xref": 91,
+    "primary_source": "book image"
+  },
+  {
+    "property": "nostro",
+    "book": "EMCCAMP - EQUIPE FERRARI/NOSTRO MOOCA/Nostro Mooca BOOK.pdf",
+    "sha256": "95d1c4eb7c7ee1b814889c68bac336bb5afd2f3560ebf2a6d6b3cb49a13b8318",
+    "reviewed": "2026-10-30",
+    "images": [
+      {
+        "xref": 132,
+        "asset": "assets/nostro-gallery-1.webp",
+        "caption": "Piscina"
+      }
+    ],
+    "primary_xref": 48,
+    "primary_source": "book image"
+  }
+]

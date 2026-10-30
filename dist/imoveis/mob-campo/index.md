@@ -5,7 +5,7 @@ Dois dormitórios, varanda e lazer para aproveitar todos os dias.
 - Região: Zona Sul, São Paulo.
 - Bairro: Campo Limpo.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 38 a 39 m².
+- Metragem informada no book: 37,99 a 39,47 m².
 - Fase: Lançamento.
 - Entrega prevista: Dez/2028.
 - Diferencial: Com varanda.
@@ -13,11 +13,11 @@ Dois dormitórios, varanda e lazer para aproveitar todos os dias.
 ## Lazer e conveniências
 
 - Piscina
-- Coworking
-- Lavanderia
-- Academia
-- Espaço gourmet
+- Solarium
+- Salão de festas
+- Playground
 - Pet place
+- Praça da fogueira
 
 ## Atendimento
 

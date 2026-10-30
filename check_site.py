@@ -39,8 +39,26 @@ for page in pages:
  if page.name!='404.html':
   expected=base+'/'+str(page.parent.relative_to(root)).replace('\\','/').strip('./')+'/' if page.parent!=root else base+'/'
   assert canonical==expected,(page,canonical,expected)
-xml=ET.parse(root/'sitemap.xml');urls=[el.text for el in xml.iter() if el.tag.endswith('}loc')];assert len(urls)==14 and len(set(urls))==14
+xml=ET.parse(root/'sitemap.xml');urls=[el.text for el in xml.iter() if el.tag.endswith('}loc')];assert len(urls)==18 and len(set(urls))==18
 for url in urls:assert resolve(urlparse(url).path).is_file() and not urlparse(url).query and not urlparse(url).fragment
-home=(root/'index.html').read_text();assert home.count('class="property-card"')==12 and '<script id="property-data"'in home
+home=(root/'index.html').read_text();assert home.count('class="property-card"')==14 and '<script id="property-data"'in home
 for f in ['llms.txt','llm.txt','llms-full.txt','robots.txt']:assert (root/f).is_file() and (root/f).stat().st_size>50
-print(f'PASS: {len(pages)} HTML pages; 14 canonical sitemap URLs; unique IDs, H1s, Legacy signature, local links, image metadata, structured JSON and prerendered catalog.')
+print(f'PASS: {len(pages)} HTML pages; 18 canonical sitemap URLs; unique IDs, H1s, Legacy signature, local links, image metadata, structured JSON and prerendered catalog.')
+
+props=json.loads((root/'properties.json').read_text())
+assert len(props)==14 and len({p['id'] for p in props})==14
+assert {'view','nostro','vision'}.issubset({p['id'] for p in props})
+for p in props:
+ for key in ['image','facade']:
+  assert (root/p[key]).is_file(),(p['id'],key)
+ for photo in p.get('gallery',[]):
+  assert Image.open(root/photo['src']).size==(photo['width'],photo['height'])
+ for item in p.get('responsive',[]):
+  assert Image.open(root/item['src']).width==item['width']
+for path in root.rglob('*'):
+ if path.is_file() and path.suffix in ['.html','.js','.json','.txt','.md']:
+  text=path.read_text()
+  assert '99379' not in text,(path,'old phone')
+  for number in re.findall(r'wa\.me/(\d+)',text):assert number=='5511932362552',(path,number)
+assert not list(root.rglob('*.pdf')), 'Review sales documents before public distribution'
+print('PASS: 14 reviewed property records; media dimensions; institutional WhatsApp; no public sales-table files.')

@@ -5,10 +5,10 @@ Plantas de 1 e 2 dormitórios e uma nova forma de viver a Barra Funda.
 - Região: Zona Oeste, São Paulo.
 - Bairro: Barra Funda.
 - Plantas: 1 e 2 dormitórios.
-- Metragem informada no portfólio: 25 a 40 m².
+- Metragem informada no book: 25,96 a 40,83 m².
 - Fase: Em obras.
 - Entrega prevista: Mar/2029.
-- Diferencial: 1 e 2 dormitórios.
+- Diferencial: Opções com suíte e varanda.
 
 ## Lazer e conveniências
 

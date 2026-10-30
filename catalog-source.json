@@ -1,0 +1,675 @@
+[
+  {
+    "id": "line-praca",
+    "name": "Line Praça da Árvore",
+    "neighborhood": "Praça da Árvore",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      1,
+      2
+    ],
+    "area": "31,23 a 40,48",
+    "status": "Em obras",
+    "delivery": "Mar/2028",
+    "description": "Apartamentos de 1 e 2 dormitórios para viver a Zona Sul.",
+    "amenities": [
+      "Piscina",
+      "Academia",
+      "Lavanderia",
+      "Pet place",
+      "Churrasqueira",
+      "Brinquedoteca"
+    ],
+    "highlight": "Consultar opções",
+    "address": "Rua Fernando de Noronha, 280",
+    "links": {
+      "book": "https://drive.google.com/drive/folders/12Upy9SZq4vu79Wi7NRaF3EdqxbYieZvY?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1mmF3xtJp3_I61c2jFBKG84nf56oGQSvL?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/line-praca-da-arvore/",
+      "imagens": "https://drive.google.com/drive/folders/1maVXS1qKV-2zdXyxrWNmms5jrjVf4wRr?usp=drive_link"
+    },
+    "image": "assets/line-praca.webp",
+    "facade": "assets/line-praca-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/line-praca-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1338,
+        "height": 683
+      },
+      {
+        "src": "assets/line-praca-gallery-2.webp",
+        "caption": "Sugestão de decoração",
+        "width": 1277,
+        "height": 666
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "atlas",
+    "name": "Atlas Sacomã",
+    "neighborhood": "Sacomã",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "41,77 a 45,27",
+    "status": "Lançamento",
+    "delivery": "Dez/2028",
+    "description": "Varanda, vaga e espaço para a sua rotina acontecer.",
+    "amenities": [
+      "Piscinas adulto e infantil",
+      "Academia",
+      "Espaço gourmet",
+      "Brinquedoteca",
+      "Pet place",
+      "Bicicletário"
+    ],
+    "highlight": "Vaga e varanda",
+    "address": "Rua Olympia Semeraro, 219 · Jardim Santa Emília",
+    "links": {
+      "book": "https://drive.google.com/drive/folders/1TtJzDx3HxrIJFZNOOT_2gN2lgFAIuXTl?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1L_NE0tRF-hqcfqkPgc7CpHFGlD3Gvq_8?usp=drive_link",
+      "imagens": "https://drive.google.com/drive/folders/1ULKaFo4rcPGEXFhi_KgZLzhHBcytaYsU?usp=drive_link"
+    },
+    "image": "assets/atlas.webp",
+    "facade": "assets/atlas-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "mob-campo",
+    "name": "MOB Campo Limpo",
+    "neighborhood": "Campo Limpo",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "37,99 a 39,47",
+    "status": "Lançamento",
+    "delivery": "Dez/2028",
+    "description": "Dois dormitórios, varanda e lazer para aproveitar todos os dias.",
+    "amenities": [
+      "Piscina",
+      "Solarium",
+      "Salão de festas",
+      "Playground",
+      "Pet place",
+      "Praça da fogueira"
+    ],
+    "highlight": "Com varanda",
+    "address": "Rua Rudolf Alt, 40",
+    "links": {
+      "map": "https://maps.app.goo.gl/y6KKoysciys8TGDm8",
+      "book": "https://drive.google.com/drive/folders/18iwHHeqhKSMNsLBsHYwmjXcevRAssh9e?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1GL3TGPPwSoKPaOH4mKJnmNR1uQRIJK1C?usp=drive_link",
+      "imagens": "https://drive.google.com/drive/folders/1pqLkrzvKF0vp7B-7xrJTc7WJjflPvsgx?usp=drive_link"
+    },
+    "image": "assets/mob-campo.webp",
+    "facade": "assets/mob-campo-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/mob-campo-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1600,
+        "height": 1146
+      },
+      {
+        "src": "assets/mob-campo-gallery-2.webp",
+        "caption": "Academia",
+        "width": 1600,
+        "height": 1142
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "sinfonia",
+    "name": "Sinfonia Santo Amaro",
+    "neighborhood": "Santo Amaro",
+    "region": "sul",
+    "regionLabel": "Zona Sul",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "41,17 a 69,85",
+    "status": "Lançamento",
+    "delivery": "Dez/2028",
+    "description": "Mais possibilidades para morar bem em Santo Amaro.",
+    "amenities": [
+      "Piscina adulto e infantil",
+      "Coworking",
+      "Academia",
+      "Quadra de areia",
+      "Pet care",
+      "Brinquedoteca"
+    ],
+    "highlight": "Varanda e opção de vaga",
+    "address": "Rua Ada Negri, 469",
+    "links": {
+      "map": "https://maps.app.goo.gl/CDc1u7gjrAudRs4x8",
+      "book": "https://drive.google.com/drive/folders/1coVBTtjg248LzNpOvzf1QetVqBGpMxxV?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1t-kBIxuf0CktRVPBWgj72k9_w0u1vcdz?usp=drive_link",
+      "imagens": "https://drive.google.com/drive/folders/1z6HkhqJCV0IUIX5V7Lqd71J72tx-7ioG?usp=drive_link"
+    },
+    "image": "assets/sinfonia.webp",
+    "facade": "assets/sinfonia-fachada.webp",
+    "areaNote": "Faixa do book, incluindo tipologias especiais. Consulte a metragem da unidade.",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "gallery": [
+      {
+        "src": "assets/sinfonia-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1600,
+        "height": 1142
+      },
+      {
+        "src": "assets/sinfonia-gallery-2.webp",
+        "caption": "Academia",
+        "width": 1600,
+        "height": 1143
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "altus",
+    "name": "Altus Vila Prudente",
+    "neighborhood": "Vila Prudente",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "42 a 45",
+    "status": "Em obras",
+    "delivery": "Nov/2026",
+    "description": "Seu novo endereço na Vila Prudente, com lazer para toda a família.",
+    "amenities": [
+      "Piscina",
+      "Academia",
+      "Salão de festas",
+      "Churrasqueira",
+      "Playground",
+      "Espaço relax"
+    ],
+    "highlight": "Piscina e lazer",
+    "address": "Rua Marcello Müller, 200",
+    "links": {
+      "map": "https://maps.app.goo.gl/X7iuomXZs5G68V5b6",
+      "book": "https://drive.google.com/drive/folders/1Ulq6w_-IrHL_kwcdeb370T8VDjIUQuU4?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1Zm7DWAMLgxAGA8FA_hzLldiJCcWfxT-T?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/altus-vila-prudente/",
+      "imagens": "https://drive.google.com/drive/folders/1Xm9LuQaYMppG0wve6Axu8MTbBE7DN9IQ?usp=drive_link"
+    },
+    "image": "assets/altus.webp",
+    "facade": "assets/altus-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/altus-gallery-1.webp",
+        "caption": "Salão de festas",
+        "width": 1600,
+        "height": 573
+      },
+      {
+        "src": "assets/altus-gallery-2.webp",
+        "caption": "Piscina",
+        "width": 1098,
+        "height": 838
+      }
+    ]
+  },
+  {
+    "id": "origem",
+    "name": "Origem Itaquera",
+    "neighborhood": "Itaquera",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "40 a 45",
+    "status": "Em obras",
+    "delivery": "Out/2027",
+    "description": "Dois dormitórios com varanda e opções com vaga para uma nova história em Itaquera.",
+    "amenities": [
+      "Piscina",
+      "Coworking",
+      "Quadra",
+      "Academia",
+      "Brinquedoteca",
+      "Pet place"
+    ],
+    "highlight": "Opções com vaga",
+    "address": "Rua Agrimensor Sugaya, 842",
+    "links": {
+      "map": "https://maps.app.goo.gl/L4pE2mDqSvwqYRKL8",
+      "book": "https://drive.google.com/drive/folders/1sjY3ghqC7RxeUc0lAYhmsezCLYq1jGeN?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1AKC8LZ7BPglz733qtBdclg3_nxN_mTxo?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/origem-itaquera/",
+      "imagens": "https://drive.google.com/drive/folders/1HMXOzCjEJRvkbdx57M-Gn4f-C6JaVXKh?usp=drive_link"
+    },
+    "image": "assets/origem.webp",
+    "facade": "assets/origem-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/origem-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1600,
+        "height": 801
+      },
+      {
+        "src": "assets/origem-gallery-2.webp",
+        "caption": "Salão de festas",
+        "width": 1600,
+        "height": 801
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "serena",
+    "name": "Serena Residence",
+    "neighborhood": "Vila Sílvia",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "40 a 41",
+    "status": "Em obras",
+    "delivery": "Jul/2028",
+    "description": "Dois dormitórios e lazer para viver seus próximos momentos na Vila Sílvia.",
+    "amenities": [
+      "Piscina",
+      "Salão de festas",
+      "Churrasqueira",
+      "Playground",
+      "Brinquedoteca",
+      "Pet place"
+    ],
+    "highlight": "Lazer em condomínio",
+    "address": "Rua Nova Itarana, 11",
+    "links": {
+      "map": "https://maps.app.goo.gl/nUcwMFrDxaahYJqn7",
+      "book": "https://drive.google.com/drive/folders/1r2-SmXBdizWanc0PcQT72emt8vDoWmEy?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1O6IQEPXuRplFXgQxAjCebu36Sx4KTSTt?usp=drive_link",
+      "tour": "https://tour.emccamp.com/multi/serena-residence/",
+      "imagens": "https://drive.google.com/drive/folders/11IZjnbW1qZPZnUsMPMMOOVP4nBEfDkb8?usp=drive_link"
+    },
+    "image": "assets/serena-r3.webp",
+    "facade": "assets/serena-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/serena-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1321,
+        "height": 726
+      },
+      {
+        "src": "assets/serena-gallery-2.webp",
+        "caption": "Academia",
+        "width": 1453,
+        "height": 853
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "vision",
+    "name": "Vision Penha",
+    "neighborhood": "Penha",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "43 a 47",
+    "status": "Pronto para morar",
+    "delivery": null,
+    "description": "Dois dormitórios, opções com suíte e lazer para seu próximo capítulo.",
+    "amenities": [
+      "Piscina",
+      "Coworking",
+      "Espaço yoga",
+      "Academia",
+      "Brinquedoteca",
+      "Espaço delivery"
+    ],
+    "highlight": "Opções com suíte",
+    "address": "Av. Amador Bueno da Veiga, 1127",
+    "links": {
+      "map": "https://maps.app.goo.gl/P1jiDJvoCUNzkyyN6",
+      "book": "https://drive.google.com/drive/folders/1JasLNJ3R_WmYZptplWZHZaTTENuSbV5Y?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1u6XdnBxGl2yPX6BHmj6OcxFh-iPMJjtP?usp=drive_link",
+      "tour": "https://tour.emccamp.com/multi/vision-penha/",
+      "imagens": "https://drive.google.com/drive/folders/1DIQiqgfBflBLAmCIKhBu4DT1XKdZQXFN?usp=drive_link"
+    },
+    "image": "assets/vision-r3.webp",
+    "facade": "assets/vision-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/vision-gallery-1.webp",
+        "caption": "Salão de festas",
+        "width": 1600,
+        "height": 919
+      },
+      {
+        "src": "assets/vision-gallery-2.webp",
+        "caption": "Piscina",
+        "width": 1600,
+        "height": 919
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "mob-barra",
+    "name": "MOB Barra Funda",
+    "neighborhood": "Barra Funda",
+    "region": "oeste",
+    "regionLabel": "Zona Oeste",
+    "city": "São Paulo",
+    "beds": [
+      1,
+      2
+    ],
+    "area": "25,96 a 40,83",
+    "status": "Em obras",
+    "delivery": "Mar/2029",
+    "description": "Plantas de 1 e 2 dormitórios e uma nova forma de viver a Barra Funda.",
+    "amenities": [
+      "Piscina",
+      "Lavanderia",
+      "Academia",
+      "Quadra de areia",
+      "Brinquedoteca",
+      "Pet place"
+    ],
+    "highlight": "Opções com suíte e varanda",
+    "address": "Rua dos Americanos, 465",
+    "links": {
+      "map": "https://maps.app.goo.gl/G83Ke9yTttsutziN8",
+      "book": "https://drive.google.com/drive/folders/1cwTNSR14YyJJMvvhtHsLZa8t9EbJGw4_?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1pF930IzZ-q4gZB_kuIoHd3v5u7Jrugpp?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/mob-barra-funda/",
+      "imagens": "https://drive.google.com/drive/folders/1u0DPEc-6LT3FFMQw5oIWay5ECDdZN3gN?usp=drive_link"
+    },
+    "image": "assets/mob-barra-r3.webp",
+    "facade": "assets/mob-barra-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/mob-barra-gallery-1.webp",
+        "caption": "Academia",
+        "width": 1600,
+        "height": 801
+      },
+      {
+        "src": "assets/mob-barra-gallery-2.webp",
+        "caption": "Sugestão de decoração",
+        "width": 1267,
+        "height": 853
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "iconico",
+    "name": "Icônico Jaraguá",
+    "neighborhood": "Jaraguá",
+    "region": "norte",
+    "regionLabel": "Zona Norte",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "40,46 a 41,80",
+    "status": "Em obras",
+    "delivery": "Set/2028",
+    "description": "Dois dormitórios e espaços para compartilhar bons momentos.",
+    "amenities": [
+      "Piscina",
+      "Coworking",
+      "Academia",
+      "Espaço gourmet",
+      "Playground",
+      "Mini market"
+    ],
+    "highlight": "Lazer em diferentes níveis",
+    "address": "Rua Camocim de São Félix, 44",
+    "links": {
+      "map": "https://maps.app.goo.gl/fnCgfyDHZWo8VdR67",
+      "book": "https://drive.google.com/drive/folders/1FSEi9NXIKRLqWEeplNAI-veJ-q9Z_6Wm?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1jX6v3GkubLBIRimrFEOFiIUoClX8QekF?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/iconico-jaragua/",
+      "imagens": "https://drive.google.com/drive/folders/1vjAnWpsErZGm_Y8E4GDm4YXwn9fFlf71?usp=drive_link"
+    },
+    "image": "assets/iconico-r3.webp",
+    "facade": "assets/iconico-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/iconico-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1600,
+        "height": 900
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "line-parada",
+    "name": "Line Parada Inglesa",
+    "neighborhood": "Tucuruvi",
+    "region": "norte",
+    "regionLabel": "Zona Norte",
+    "city": "São Paulo",
+    "beds": [
+      1,
+      2
+    ],
+    "area": "30,85 a 40,21",
+    "status": "Em obras",
+    "delivery": "Ago/2028",
+    "description": "Seu lugar na Zona Norte, com plantas de 1 e 2 dormitórios.",
+    "amenities": [
+      "Coworking",
+      "Lavanderia",
+      "Academia",
+      "Espaço yoga",
+      "Pet care",
+      "Brinquedoteca"
+    ],
+    "highlight": "Plantas compactas",
+    "address": "Rua do Tramway, 103",
+    "links": {
+      "map": "https://maps.app.goo.gl/mSusAAgitmgR54pm6",
+      "book": "https://drive.google.com/drive/folders/1_fyAjbpRCsvVDfOYBYPFJL1QW1l3EzMy?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1E_TX5W_MThg8UF76iHJzAzloeU8CXJNK?usp=drive_link",
+      "tour": "https://tour.emccamp.com/decorado/line-parada-inglesa/",
+      "imagens": "https://drive.google.com/drive/folders/1uKtQAyhNhhKGgNXeLo8Wo4rau0m8Fd8S?usp=drive_link"
+    },
+    "image": "assets/line-parada-r3.webp",
+    "facade": "assets/line-parada-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/line-parada-gallery-1.webp",
+        "caption": "Salão de festas",
+        "width": 1600,
+        "height": 867
+      },
+      {
+        "src": "assets/line-parada-gallery-2.webp",
+        "caption": "Academia",
+        "width": 1600,
+        "height": 758
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "villagio",
+    "name": "Villagio dos Eucaliptos",
+    "neighborhood": "Medeiros",
+    "region": "jundiai",
+    "regionLabel": "Jundiaí",
+    "city": "Jundiaí",
+    "beds": [
+      2
+    ],
+    "area": "50,73 a 58,78",
+    "status": "Em obras",
+    "delivery": "Ago/2028",
+    "description": "Casas de dois dormitórios com suíte e lazer em condomínio no bairro Medeiros.",
+    "amenities": [
+      "Piscina adulto e infantil",
+      "Academia",
+      "Salão de festas",
+      "Churrasqueira",
+      "Pet place",
+      "Pomar e horta"
+    ],
+    "highlight": "Casas com suíte",
+    "address": "Rua Primo Porcari · Medeiros, Jundiaí",
+    "links": {
+      "map": "https://maps.app.goo.gl/Kpmf9RYWXZn3iy6p6",
+      "book": "https://drive.google.com/drive/folders/1OvLuiprQVg5A2KaD3nPcmEhWufyEaFL8?usp=drive_link",
+      "tabela": "https://drive.google.com/drive/folders/1XBJXn0lBg3Sz7_ToPVRJwmopVG0w2sJe?usp=drive_link",
+      "tour": "https://tour.emccamp.com/multi/villagio-dos-eucaliptos/",
+      "imagens": "https://drive.google.com/drive/folders/1NovdlnTbJPy2X83P9yIt3Lip8WRnPrHq?usp=drive_link"
+    },
+    "image": "assets/villagio-r3.webp",
+    "facade": "assets/villagio-fachada.webp",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "areaNote": "Metragens do book. Consulte as tipologias e unidades disponíveis.",
+    "gallery": [
+      {
+        "src": "assets/villagio-gallery-1.webp",
+        "caption": "Salão de festas",
+        "width": 1600,
+        "height": 911
+      },
+      {
+        "src": "assets/villagio-gallery-2.webp",
+        "caption": "Piscina",
+        "width": 1600,
+        "height": 1037
+      }
+    ],
+    "tableReference": "out/2026"
+  },
+  {
+    "id": "view",
+    "name": "View Parque Ecológico",
+    "neighborhood": "Parque Ecológico",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2
+    ],
+    "area": "40,09 a 55,97",
+    "status": "Lançamento",
+    "delivery": null,
+    "description": "Dois dormitórios, opções garden e lazer para viver a Zona Leste.",
+    "amenities": [
+      "Piscina",
+      "Academia",
+      "Churrasqueira",
+      "Salão de festas",
+      "Coworking",
+      "Pet place"
+    ],
+    "highlight": "Opções garden",
+    "address": "Rua Novo Oriente do Piauí, 35",
+    "links": {},
+    "image": "assets/view-r3.webp",
+    "facade": "assets/view-r3.webp",
+    "areaNote": "Faixa do book, incluindo unidades garden. Consulte a unidade.",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "gallery": [
+      {
+        "src": "assets/view-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1591,
+        "height": 1123
+      },
+      {
+        "src": "assets/view-gallery-2.webp",
+        "caption": "Salão de festas",
+        "width": 1591,
+        "height": 1123
+      }
+    ]
+  },
+  {
+    "id": "nostro",
+    "name": "Nostro Mooca",
+    "neighborhood": "Mooca",
+    "region": "leste",
+    "regionLabel": "Zona Leste",
+    "city": "São Paulo",
+    "beds": [
+      2,
+      3
+    ],
+    "area": "40 a 79",
+    "status": "Consultar fase",
+    "delivery": null,
+    "description": "Plantas de dois e três dormitórios, opções com suíte e lazer em condomínio na Mooca.",
+    "amenities": [
+      "Piscina adulto e infantil",
+      "Quadra de beach tennis",
+      "Academia",
+      "Coworking",
+      "Brinquedoteca",
+      "Pet place"
+    ],
+    "highlight": "Condomínio-clube",
+    "address": "Rua da Mooca, 1678",
+    "links": {},
+    "image": "assets/nostro-r3.webp",
+    "facade": "assets/nostro-r3.webp",
+    "areaNote": "Faixa do book, incluindo gardens. Disponibilidade por tipologia sob consulta.",
+    "contentReference": "Books EMCCAMP fornecidos em outubro/2026",
+    "gallery": [
+      {
+        "src": "assets/nostro-gallery-1.webp",
+        "caption": "Piscina",
+        "width": 1600,
+        "height": 960
+      }
+    ]
+  }
+]

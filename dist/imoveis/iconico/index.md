@@ -5,10 +5,10 @@ Dois dormitórios e espaços para compartilhar bons momentos.
 - Região: Zona Norte, São Paulo.
 - Bairro: Jaraguá.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 40 a 41 m².
+- Metragem informada no book: 40,46 a 41,80 m².
 - Fase: Em obras.
 - Entrega prevista: Set/2028.
-- Diferencial: 2 dormitórios.
+- Diferencial: Lazer em diferentes níveis.
 
 ## Lazer e conveniências
 

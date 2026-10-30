@@ -1,14 +1,14 @@
 # Origem Itaquera
 
-Dois dormitórios com vaga e lazer para viver mais momentos juntos.
+Dois dormitórios com varanda e opções com vaga para uma nova história em Itaquera.
 
 - Região: Zona Leste, São Paulo.
 - Bairro: Itaquera.
 - Plantas: 2 dormitórios.
-- Metragem informada no portfólio: 41 m².
+- Metragem informada no book: 40 a 45 m².
 - Fase: Em obras.
 - Entrega prevista: Out/2027.
-- Diferencial: Com vaga.
+- Diferencial: Opções com vaga.
 
 ## Lazer e conveniências
 
