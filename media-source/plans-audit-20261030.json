@@ -1,0 +1,145 @@
+[
+  {
+    "id": "altus",
+    "src": "assets/altus-planta-20261030.webp",
+    "width": 1800,
+    "height": 1310,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "ALTUS/BOOK ALTUS.pdf",
+    "sourcePage": 15,
+    "sourceSha256": "2e5b418975915f555b15d9ef295b04ba868d02502cd2b0384532467366cfff62"
+  },
+  {
+    "id": "atlas",
+    "src": "assets/atlas-planta-20261030.webp",
+    "width": 1800,
+    "height": 2250,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "ATLAS/BOOK Atlas Sacomã.pdf",
+    "sourcePage": 2,
+    "sourceSha256": "d816f05723545df7cdef545f7a02c8db5e80099760a5e945b2f985f06941f0a6"
+  },
+  {
+    "id": "iconico",
+    "src": "assets/iconico-planta-20261030.webp",
+    "width": 1800,
+    "height": 1291,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "ICÔNICO/BOOK ICÔNICO_EQUIPE BIBI.pdf",
+    "sourcePage": 13,
+    "sourceSha256": "585cb1fc09b114ef13b189d71ffe6e0e9ca19310592b0c1294536e58935dbc86"
+  },
+  {
+    "id": "line-parada",
+    "src": "assets/line-parada-planta-20261030.webp",
+    "width": 1800,
+    "height": 900,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "LINE PARADA INGLESA/BOOK Line Parada Inglesa.pdf",
+    "sourcePage": 21,
+    "sourceSha256": "c1ba038c50091607b62f4245804e1b295db8f8d1aae7a8a8fc12bb4e63205715"
+  },
+  {
+    "id": "line-praca",
+    "src": "assets/line-praca-planta-20261030.webp",
+    "width": 1800,
+    "height": 1273,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "LINE PRAÇA DA ÁRVORE /BOOK LINE Praça da Arvore.pdf",
+    "sourcePage": 16,
+    "sourceSha256": "4cb6418090b7d8d86d520313515a5cf3c75392bb1e8b85955564f6ac194cefed"
+  },
+  {
+    "id": "mob-barra",
+    "src": "assets/mob-barra-planta-20261030.webp",
+    "width": 1800,
+    "height": 900,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "MOB BARRA FUNDA/Book Mob Barra Funda.pdf",
+    "sourcePage": 22,
+    "sourceSha256": "17b3032cc39972b3a562c8bfb6f38a356d80cbdf6cada19d9f2f7e007f0ee721"
+  },
+  {
+    "id": "mob-campo",
+    "src": "assets/mob-campo-planta-20261030.webp",
+    "width": 1800,
+    "height": 1291,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "MOB CAMPO LIMPO/BOOK MOB Campo LImpo.pdf",
+    "sourcePage": 16,
+    "sourceSha256": "5f2e457d930c55f3722f3e797c0a086ea06f5a8b5df4cf0ba09f6bdc1ee453f7"
+  },
+  {
+    "id": "nostro",
+    "src": "assets/nostro-planta-20261030.webp",
+    "width": 1800,
+    "height": 1116,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "NOSTRO MOOCA/Nostro Mooca BOOK.pdf",
+    "sourcePage": 23,
+    "sourceSha256": "95d1c4eb7c7ee1b814889c68bac336bb5afd2f3560ebf2a6d6b3cb49a13b8318"
+  },
+  {
+    "id": "origem",
+    "src": "assets/origem-planta-20261030.webp",
+    "width": 1800,
+    "height": 900,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "ORIGEM ITAQUERA/Book ORIGEM ITAQUERA.pdf",
+    "sourcePage": 15,
+    "sourceSha256": "cbec8d050ce00996a87c693d9ffcd98aa73823b9c36b1fae2618d4b3cc4649bb"
+  },
+  {
+    "id": "serena",
+    "src": "assets/serena-planta-20261030.webp",
+    "width": 1800,
+    "height": 900,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "SERENA/Book Serena.pdf",
+    "sourcePage": 15,
+    "sourceSha256": "bc2200a0c8022a11b74fa6262a3a275447e6c9f4d5b83a51370c06a95e4e9b1b"
+  },
+  {
+    "id": "sinfonia",
+    "src": "assets/sinfonia-planta-20261030.webp",
+    "width": 1800,
+    "height": 1273,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "SINFÔNIA/BOOK Sinfônia.pdf",
+    "sourcePage": 19,
+    "sourceSha256": "352eecc38a5b98c5b32c67d5460eaf9cfe5f1d4668665d377f0c50c76c48edc3"
+  },
+  {
+    "id": "villagio",
+    "src": "assets/villagio-planta-20261030.webp",
+    "width": 1800,
+    "height": 1273,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "VILLAGIO/Book Villagio.pdf",
+    "sourcePage": 17,
+    "sourceSha256": "faab99c9a90a438761e967661a30f1e0cd5a164ce737c3d75ca0efc08c42b2dd"
+  },
+  {
+    "id": "vision",
+    "src": "assets/vision-planta-20261030.webp",
+    "width": 1800,
+    "height": 1310,
+    "caption": "Plantas ilustrativas do book",
+    "type": "plan",
+    "source": "VISION PENHA/Book Vision Penha (1).pdf",
+    "sourcePage": 19,
+    "sourceSha256": "f59fdcc689679f8fbcd2559301eac0a8fa62a033be92a1b874064d9a0497519b"
+  }
+]

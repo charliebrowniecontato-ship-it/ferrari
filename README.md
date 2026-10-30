@@ -68,3 +68,12 @@ As capas de compartilhamento são JPEG de 1200 × 630, com marca Ferrari, títul
 A reunião também propõe CRM/API, dashboard de aquisição, campanhas, eventual SDR e jornada individual por corretor. Nenhuma dessas integrações é apresentada como ativa. Para executá-las, faltam o acesso e identificação técnica do CRM, contas de mídia/analytics e definição de responsáveis, eventos e funil. Doni/Malu devem confirmar os destinos das quatro landing pages, a rotina de atualização dos materiais e a fase/entrega do Nostro e do View. Não foram inferidos IDs de analytics, chaves, permissões, taxas bancárias ou regras de crédito.
 
 O arquivo mais recente com sufixo `(2).zip` não pôde ser aberto nesta sessão. A revisão foi feita com o pacote anterior disponível, recebido em 29/10/2026; novos materiais precisam ser conferidos após o reenvio.
+
+
+## Central da equipe e cadastro corporativo — 30/10/2026
+
+A central da Equipe Ferrari está em `/equipe/`, preservando o visual aprovado; `/materiais/` passa a redirecionar para ela. `team-materials.json` indexa os 13 ZIPs comerciais recebidos, com books em PDF e tabelas de referência datadas. As 13 plantas ilustrativas adicionais têm origem e página registradas em `media-source/plans-audit-20261030.json`. O View mantém os materiais já recebidos anteriormente; seu ZIP específico não estava no novo lote.
+
+O cadastro corporativo `/parcerias/` possui quatro etapas, revisão, anexos e um endpoint servidor. **O envio está desativado até a configuração na conta Google de Ferrari.** Não houve envio de e-mail real nem coleta de documentos de clientes. As imagens de referência mostram um cadastro de corretores e não confirmam a lista documental das imobiliárias.
+
+Veja `docs/CADASTRO-EQUIPE-FERRARI.md` para ativação, dados pendentes, operação mensal e comportamento de privacidade. A pasta Google Drive principal e o link do formulário de referência não foram fornecidos; os materiais desta publicação vêm dos ZIPs, sem sincronização automática com o Drive. A documentação de implantação fica fora da interface do cliente.

@@ -30,13 +30,43 @@
       ]
     },
     {
-      "source": "/(styles.css|app.js|site-ui.js|property-page.js|site-tools.js)",
+      "source": "/(styles.css|app.js|site-ui.js|property-page.js|site-tools.js|partnership.js)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=0, must-revalidate"
         }
       ]
+    },
+    {
+      "source": "/assets/materiais/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
     }
-  ]
+  ],
+  "redirects": [
+    {
+      "source": "/materiais",
+      "destination": "/equipe/",
+      "permanent": true
+    },
+    {
+      "source": "/materiais/",
+      "destination": "/equipe/",
+      "permanent": true
+    }
+  ],
+  "functions": {
+    "api/parcerias.mjs": {
+      "maxDuration": 30
+    }
+  }
 }

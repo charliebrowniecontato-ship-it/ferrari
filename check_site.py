@@ -60,5 +60,13 @@ for path in root.rglob('*'):
   text=path.read_text()
   assert '99379' not in text,(path,'old phone')
   for number in re.findall(r'wa\.me/(\d+)',text):assert number=='5511932362552',(path,number)
-assert not list(root.rglob('*.pdf')), 'Review sales documents before public distribution'
-print('PASS: 14 reviewed property records; media dimensions; institutional WhatsApp; no public sales-table files.')
+assert all('/assets/materiais/' in str(p) for p in root.rglob('*.pdf')), 'PDF outside the approved commercial library'
+manifest=json.loads(Path('team-materials.json').read_text())
+import hashlib,fitz
+for material in manifest['properties']:
+ for kind,item in material['files'].items():
+  file=root/item['url'].lstrip('/')
+  assert file.is_file() and file.stat().st_size==item['bytes'],file
+  assert len(fitz.open(file))==item['pages'],file
+  if kind=='tabela':assert hashlib.sha256(file.read_bytes()).hexdigest()==item['sha256'],(file,'sales table changed')
+print('PASS: 14 reviewed property records; media dimensions; institutional WhatsApp; commercial PDFs confined to the dated library; sales tables preserved byte for byte.')
