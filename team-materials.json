@@ -4,300 +4,351 @@
   "received": "2026-10-30",
   "properties": [
     {
-      "id": "altus",
-      "archive": "ALTUS-20261030T191829Z-1-001.zip",
+      "id": "serena",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
       "files": {
         "tabela": {
-          "url": "/assets/materiais/2026-10/altus-tabela.pdf",
-          "bytes": 37785,
-          "source": "ALTUS/✅Tabela de vendas - RESIDENCIAL ALTUS VILA PRUDENTE - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "4c605b0095a6bad0434f5fd3d15b48780a6582850db668fca58337cbf6561e53",
-          "pages": 1,
-          "reference": "10/2026"
+          "url": "/assets/materiais/2026-10/serena-tabela.pdf",
+          "bytes": 330828,
+          "source": "EMCCAMP - EQUIPE FERRARI/SERENA/✅Tabela de vendas - SERENA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "aeda7d653ad0bde1b390c3c4b14f9a6a76813141c515128f37632c1be4966f44",
+          "pages": 3,
+          "reference": "10/2026",
+          "publishedSha256": "aeda7d653ad0bde1b390c3c4b14f9a6a76813141c515128f37632c1be4966f44"
         },
         "book": {
-          "url": "/assets/materiais/2026-10/altus-book.pdf",
-          "bytes": 2768253,
-          "source": "ALTUS/BOOK ALTUS.pdf",
-          "sha256": "2e5b418975915f555b15d9ef295b04ba868d02502cd2b0384532467366cfff62",
-          "pages": 19,
-          "reference": "10/2026"
+          "url": "/assets/materiais/2026-10/serena-book.pdf",
+          "bytes": 4735767,
+          "source": "EMCCAMP - EQUIPE FERRARI/SERENA/Book Serena.pdf",
+          "sha256": "bc2200a0c8022a11b74fa6262a3a275447e6c9f4d5b83a51370c06a95e4e9b1b",
+          "pages": 18,
+          "reference": "10/2026",
+          "publishedSha256": "72d137432349281590eae103c5d369de379d7d51d2d4dfd9064a321df1879a1c"
         }
       },
       "received": "2026-10-30"
     },
     {
-      "id": "atlas",
-      "archive": "ATLAS-20261030T191831Z-1-001.zip",
+      "id": "altus",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
       "files": {
-        "book": {
-          "url": "/assets/materiais/2026-10/atlas-book.pdf",
-          "bytes": 546850,
-          "source": "ATLAS/BOOK Atlas Sacomã.pdf",
-          "sha256": "d816f05723545df7cdef545f7a02c8db5e80099760a5e945b2f985f06941f0a6",
-          "pages": 2,
-          "reference": "10/2026"
-        },
         "tabela": {
-          "url": "/assets/materiais/2026-10/atlas-tabela.pdf",
-          "bytes": 1991101,
-          "source": "ATLAS/✅Tabela de vendas - ATLAS SACOMÃ BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "0136dc1a9e8c29d3c737cb474a12b86c1c518a1219a86ce1e1ee6a9cc7b322a8",
-          "pages": 12,
-          "reference": "10/2026"
+          "url": "/assets/materiais/2026-10/altus-tabela.pdf",
+          "bytes": 37785,
+          "source": "EMCCAMP - EQUIPE FERRARI/ALTUS/✅Tabela de vendas - RESIDENCIAL ALTUS VILA PRUDENTE - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "4c605b0095a6bad0434f5fd3d15b48780a6582850db668fca58337cbf6561e53",
+          "pages": 1,
+          "reference": "10/2026",
+          "publishedSha256": "4c605b0095a6bad0434f5fd3d15b48780a6582850db668fca58337cbf6561e53"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/altus-book.pdf",
+          "bytes": 2768253,
+          "source": "EMCCAMP - EQUIPE FERRARI/ALTUS/BOOK ALTUS.pdf",
+          "sha256": "2e5b418975915f555b15d9ef295b04ba868d02502cd2b0384532467366cfff62",
+          "pages": 19,
+          "reference": "10/2026",
+          "publishedSha256": "1c44b824c25a2b6bd08f206191d13d43e93ca9d180e5bd18dab4873d6c01e68b"
         }
       },
       "received": "2026-10-30"
     },
     {
       "id": "iconico",
-      "archive": "ICÔNICO-20261030T191834Z-1-001.zip",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
       "files": {
         "tabela": {
           "url": "/assets/materiais/2026-10/iconico-tabela.pdf",
           "bytes": 551108,
-          "source": "ICÔNICO/✅Tabela de vendas - CONDOMINIO ICONICO JARAGUA - OUTUBRO - EQUIPE FERRARI.pdf",
+          "source": "EMCCAMP - EQUIPE FERRARI/ICÔNICO/✅Tabela de vendas - CONDOMINIO ICONICO JARAGUA - OUTUBRO - EQUIPE FERRARI.pdf",
           "sha256": "a545ff160c65f2588719371cc02167462fa2529cab4164fff89a9471310508d9",
           "pages": 5,
-          "reference": "10/2026"
+          "reference": "10/2026",
+          "publishedSha256": "a545ff160c65f2588719371cc02167462fa2529cab4164fff89a9471310508d9"
         },
         "book": {
           "url": "/assets/materiais/2026-10/iconico-book.pdf",
           "bytes": 9330511,
-          "source": "ICÔNICO/BOOK ICÔNICO_EQUIPE BIBI.pdf",
+          "source": "EMCCAMP - EQUIPE FERRARI/ICÔNICO/BOOK ICÔNICO_EQUIPE BIBI.pdf",
           "sha256": "585cb1fc09b114ef13b189d71ffe6e0e9ca19310592b0c1294536e58935dbc86",
           "pages": 21,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "line-parada",
-      "archive": "LINE PARADA INGLESA-20261030T191837Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/line-parada-tabela.pdf",
-          "bytes": 518739,
-          "source": "LINE PARADA INGLESA/✅Tabela de vendas - CONDOMINIO LINE PARADA INGLESA - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "5a0e6de84dfe83ecbe5e6248cce2d2d76b93000b53f57a7fd01d06c94455abee",
-          "pages": 5,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/line-parada-book.pdf",
-          "bytes": 4277614,
-          "source": "LINE PARADA INGLESA/BOOK Line Parada Inglesa.pdf",
-          "sha256": "c1ba038c50091607b62f4245804e1b295db8f8d1aae7a8a8fc12bb4e63205715",
-          "pages": 27,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "line-praca",
-      "archive": "LINE PRAÇA DA ÁRVORE -20261030T191840Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/line-praca-tabela.pdf",
-          "bytes": 1075185,
-          "source": "LINE PRAÇA DA ÁRVORE /✅Tabela de vendas - LINE PRAÇA DA ÁRVORE BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "b71c2b18ac84de8d39507937d887caf5c25bc934289cfb3be5dce809fb84348e",
-          "pages": 9,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/line-praca-book.pdf",
-          "bytes": 7235499,
-          "source": "LINE PRAÇA DA ÁRVORE /BOOK LINE Praça da Arvore.pdf",
-          "sha256": "4cb6418090b7d8d86d520313515a5cf3c75392bb1e8b85955564f6ac194cefed",
-          "pages": 20,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "mob-barra",
-      "archive": "MOB BARRA FUNDA-20261030T191842Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/mob-barra-tabela.pdf",
-          "bytes": 1041009,
-          "source": "MOB BARRA FUNDA/✅Tabela de vendas - MOB BARRA FUNDA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "e15a0ee58b7ce760c92efde721c102a4f6eca2bf950d388434dd6acc984a2e5e",
-          "pages": 9,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/mob-barra-book.pdf",
-          "bytes": 7148221,
-          "source": "MOB BARRA FUNDA/Book Mob Barra Funda.pdf",
-          "sha256": "17b3032cc39972b3a562c8bfb6f38a356d80cbdf6cada19d9f2f7e007f0ee721",
-          "pages": 25,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "mob-campo",
-      "archive": "MOB CAMPO LIMPO-20261030T191914Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/mob-campo-tabela.pdf",
-          "bytes": 1554651,
-          "source": "MOB CAMPO LIMPO/✅Tabela de vendas - MOB CAMPO LIMPO BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "f890bc4b3e8a9a17ee670aaf57da6c2b19bfa9e864f1049dfd3ade63fdb9e27f",
-          "pages": 13,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/mob-campo-book.pdf",
-          "bytes": 9344090,
-          "source": "MOB CAMPO LIMPO/BOOK MOB Campo LImpo.pdf",
-          "sha256": "5f2e457d930c55f3722f3e797c0a086ea06f5a8b5df4cf0ba09f6bdc1ee453f7",
-          "pages": 21,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "nostro",
-      "archive": "NOSTRO MOOCA-20261030T191922Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/nostro-tabela.pdf",
-          "bytes": 434362,
-          "source": "NOSTRO MOOCA/✅Tabela de vendas - NOSTRO MOOCA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "b04624f37c4ba69ab047c482a88edd395a27244ea1f18da6e778fadb6c77f71b",
-          "pages": 1,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/nostro-book.pdf",
-          "bytes": 8656287,
-          "source": "NOSTRO MOOCA/Nostro Mooca BOOK.pdf",
-          "sha256": "95d1c4eb7c7ee1b814889c68bac336bb5afd2f3560ebf2a6d6b3cb49a13b8318",
-          "pages": 32,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "origem",
-      "archive": "ORIGEM ITAQUERA-20261030T191926Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/origem-tabela.pdf",
-          "bytes": 870280,
-          "source": "ORIGEM ITAQUERA/✅Tabela de vendas - ORIGEM ITAQUERA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "89861b6b40a467ae16315ce11557fb258096ca363a2b6ae8a2b3e51733eb5dbd",
-          "pages": 5,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/origem-book.pdf",
-          "bytes": 5980157,
-          "source": "ORIGEM ITAQUERA/Book ORIGEM ITAQUERA.pdf",
-          "sha256": "cbec8d050ce00996a87c693d9ffcd98aa73823b9c36b1fae2618d4b3cc4649bb",
-          "pages": 17,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "serena",
-      "archive": "SERENA-20261030T191930Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/serena-tabela.pdf",
-          "bytes": 330828,
-          "source": "SERENA/✅Tabela de vendas - SERENA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "aeda7d653ad0bde1b390c3c4b14f9a6a76813141c515128f37632c1be4966f44",
-          "pages": 3,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/serena-book.pdf",
-          "bytes": 4735767,
-          "source": "SERENA/Book Serena.pdf",
-          "sha256": "bc2200a0c8022a11b74fa6262a3a275447e6c9f4d5b83a51370c06a95e4e9b1b",
-          "pages": 18,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "sinfonia",
-      "archive": "SINFÔNIA-20261030T191938Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/sinfonia-tabela.pdf",
-          "bytes": 1725150,
-          "source": "SINFÔNIA/✅Tabela de vendas - SINFONIA SANTO AMARO - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "3ac988dcc343677a08e7e61ee06de357fc154d69fc0f909ae847af2a6789e12f",
-          "pages": 12,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/sinfonia-book.pdf",
-          "bytes": 5141270,
-          "source": "SINFÔNIA/BOOK Sinfônia.pdf",
-          "sha256": "352eecc38a5b98c5b32c67d5460eaf9cfe5f1d4668665d377f0c50c76c48edc3",
-          "pages": 23,
-          "reference": "10/2026"
-        }
-      },
-      "received": "2026-10-30"
-    },
-    {
-      "id": "villagio",
-      "archive": "VILLAGIO-20261030T192004Z-1-001.zip",
-      "files": {
-        "tabela": {
-          "url": "/assets/materiais/2026-10/villagio-tabela.pdf",
-          "bytes": 221078,
-          "source": "VILLAGIO/✅Tabela de vendas - VILLAGIO DOS EUCALIPTOS - OUTUBRO - EQUIPE FERRARI.pdf",
-          "sha256": "156d7d05bf1d5548dd966ef91ae60bbb7970460bd706142b626f6d7498f5cf2c",
-          "pages": 2,
-          "reference": "10/2026"
-        },
-        "book": {
-          "url": "/assets/materiais/2026-10/villagio-book.pdf",
-          "bytes": 3881841,
-          "source": "VILLAGIO/Book Villagio.pdf",
-          "sha256": "faab99c9a90a438761e967661a30f1e0cd5a164ce737c3d75ca0efc08c42b2dd",
-          "pages": 22,
-          "reference": "10/2026"
+          "reference": "10/2026",
+          "publishedSha256": "a7fbc441f1fa0ee033f2e26d76b7f390de71f0bebd023ce3a83f9b1e164b34c4"
         }
       },
       "received": "2026-10-30"
     },
     {
       "id": "vision",
-      "archive": "VISION PENHA-20261030T192017Z-1-001.zip",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
       "files": {
         "tabela": {
           "url": "/assets/materiais/2026-10/vision-tabela.pdf",
           "bytes": 370745,
-          "source": "VISION PENHA/✅Tabela de vendas - CONDOMÍNIO VISION PENHA - OUTUBRO - EQUIPE FERRARI.pdf",
+          "source": "EMCCAMP - EQUIPE FERRARI/VISION PENHA/✅Tabela de vendas - CONDOMÍNIO VISION PENHA - OUTUBRO - EQUIPE FERRARI.pdf",
           "sha256": "5c6d3a5447a5325fbc6b867e8fb3d23321ec9094caf3c9b0a7fe92fc7e070f38",
           "pages": 3,
-          "reference": "10/2026"
+          "reference": "10/2026",
+          "publishedSha256": "5c6d3a5447a5325fbc6b867e8fb3d23321ec9094caf3c9b0a7fe92fc7e070f38"
         },
         "book": {
           "url": "/assets/materiais/2026-10/vision-book.pdf",
           "bytes": 3338796,
-          "source": "VISION PENHA/Book Vision Penha (1).pdf",
+          "source": "EMCCAMP - EQUIPE FERRARI/VISION PENHA/Book Vision Penha (1).pdf",
           "sha256": "f59fdcc689679f8fbcd2559301eac0a8fa62a033be92a1b874064d9a0497519b",
           "pages": 23,
-          "reference": "10/2026"
+          "reference": "10/2026",
+          "publishedSha256": "f59fdcc689679f8fbcd2559301eac0a8fa62a033be92a1b874064d9a0497519b"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "view",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/view-tabela.pdf",
+          "bytes": 1656104,
+          "source": "EMCCAMP - EQUIPE FERRARI/VIEW PARQUE ECOLÔGICO/✅Tabela de vendas - VIEW PARQUE ECOLÓGICO BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "96117eebba30f84982878b2f6b07cbcdfb5880cc678ce819e72e78f3c7b77c9b",
+          "pages": 13,
+          "reference": "10/2026",
+          "publishedSha256": "96117eebba30f84982878b2f6b07cbcdfb5880cc678ce819e72e78f3c7b77c9b"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/view-book.pdf",
+          "bytes": 4286388,
+          "source": "EMCCAMP - EQUIPE FERRARI/VIEW PARQUE ECOLÔGICO/BOOK View Parque Ecolôgico.pdf",
+          "sha256": "c13006e4c94556c22e12dd7324ba4669de4928b2c974d255d5b2dca94d86da90",
+          "pages": 20,
+          "reference": "10/2026",
+          "publishedSha256": "aebfba6dce0962c11000b96b90552e925c02ce7d1b3e29e28efab78871fb0f15"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "villagio",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/villagio-tabela.pdf",
+          "bytes": 221078,
+          "source": "EMCCAMP - EQUIPE FERRARI/VILLAGIO/✅Tabela de vendas - VILLAGIO DOS EUCALIPTOS - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "156d7d05bf1d5548dd966ef91ae60bbb7970460bd706142b626f6d7498f5cf2c",
+          "pages": 2,
+          "reference": "10/2026",
+          "publishedSha256": "156d7d05bf1d5548dd966ef91ae60bbb7970460bd706142b626f6d7498f5cf2c"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/villagio-book.pdf",
+          "bytes": 3881841,
+          "source": "EMCCAMP - EQUIPE FERRARI/VILLAGIO/Book Villagio.pdf",
+          "sha256": "faab99c9a90a438761e967661a30f1e0cd5a164ce737c3d75ca0efc08c42b2dd",
+          "pages": 22,
+          "reference": "10/2026",
+          "publishedSha256": "d738857d0f10f6a783085669570d9a4ffc5312f00e6a494e2877eba43ea32ce2"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "line-praca",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/line-praca-tabela.pdf",
+          "bytes": 1075185,
+          "source": "EMCCAMP - EQUIPE FERRARI/LINE PRAÇA DA ÁRVORE /✅Tabela de vendas - LINE PRAÇA DA ÁRVORE BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "b71c2b18ac84de8d39507937d887caf5c25bc934289cfb3be5dce809fb84348e",
+          "pages": 9,
+          "reference": "10/2026",
+          "publishedSha256": "b71c2b18ac84de8d39507937d887caf5c25bc934289cfb3be5dce809fb84348e"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/line-praca-book.pdf",
+          "bytes": 7235499,
+          "source": "EMCCAMP - EQUIPE FERRARI/LINE PRAÇA DA ÁRVORE /BOOK LINE Praça da Arvore.pdf",
+          "sha256": "4cb6418090b7d8d86d520313515a5cf3c75392bb1e8b85955564f6ac194cefed",
+          "pages": 20,
+          "reference": "10/2026",
+          "publishedSha256": "c72bd7b28480caeabea642e73bf858feb9dd0c8845cffb4fdc1e5ad64ad9e993"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "mob-campo",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/mob-campo-tabela.pdf",
+          "bytes": 1554651,
+          "source": "EMCCAMP - EQUIPE FERRARI/MOB CAMPO LIMPO/✅Tabela de vendas - MOB CAMPO LIMPO BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "f890bc4b3e8a9a17ee670aaf57da6c2b19bfa9e864f1049dfd3ade63fdb9e27f",
+          "pages": 13,
+          "reference": "10/2026",
+          "publishedSha256": "f890bc4b3e8a9a17ee670aaf57da6c2b19bfa9e864f1049dfd3ade63fdb9e27f"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/mob-campo-book.pdf",
+          "bytes": 9344090,
+          "source": "EMCCAMP - EQUIPE FERRARI/MOB CAMPO LIMPO/BOOK MOB Campo LImpo.pdf",
+          "sha256": "5f2e457d930c55f3722f3e797c0a086ea06f5a8b5df4cf0ba09f6bdc1ee453f7",
+          "pages": 21,
+          "reference": "10/2026",
+          "publishedSha256": "2418434cfa6b734d0de95b50e786580d87332e4085ff9be67998b37608ad2199"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "sinfonia",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/sinfonia-tabela.pdf",
+          "bytes": 1725150,
+          "source": "EMCCAMP - EQUIPE FERRARI/SINFÔNIA/✅Tabela de vendas - SINFONIA SANTO AMARO - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "3ac988dcc343677a08e7e61ee06de357fc154d69fc0f909ae847af2a6789e12f",
+          "pages": 12,
+          "reference": "10/2026",
+          "publishedSha256": "3ac988dcc343677a08e7e61ee06de357fc154d69fc0f909ae847af2a6789e12f"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/sinfonia-book.pdf",
+          "bytes": 5141270,
+          "source": "EMCCAMP - EQUIPE FERRARI/SINFÔNIA/BOOK Sinfônia.pdf",
+          "sha256": "352eecc38a5b98c5b32c67d5460eaf9cfe5f1d4668665d377f0c50c76c48edc3",
+          "pages": 23,
+          "reference": "10/2026",
+          "publishedSha256": "ae1c85cfdc94b7c2d7cb1d75899e6cfa38b89bc2fa909edc2ba64dc8c1094d1a"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "atlas",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "book": {
+          "url": "/assets/materiais/2026-10/atlas-book.pdf",
+          "bytes": 546850,
+          "source": "EMCCAMP - EQUIPE FERRARI/ATLAS/BOOK Atlas Sacomã.pdf",
+          "sha256": "d816f05723545df7cdef545f7a02c8db5e80099760a5e945b2f985f06941f0a6",
+          "pages": 2,
+          "reference": "10/2026",
+          "publishedSha256": "390bc0293172d1b56a6898c8a573958d356a6aacaaca6505dd9c866c4cf4574b"
+        },
+        "tabela": {
+          "url": "/assets/materiais/2026-10/atlas-tabela.pdf",
+          "bytes": 1991101,
+          "source": "EMCCAMP - EQUIPE FERRARI/ATLAS/✅Tabela de vendas - ATLAS SACOMÃ BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "0136dc1a9e8c29d3c737cb474a12b86c1c518a1219a86ce1e1ee6a9cc7b322a8",
+          "pages": 12,
+          "reference": "10/2026",
+          "publishedSha256": "0136dc1a9e8c29d3c737cb474a12b86c1c518a1219a86ce1e1ee6a9cc7b322a8"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "nostro",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/nostro-tabela.pdf",
+          "bytes": 434362,
+          "source": "EMCCAMP - EQUIPE FERRARI/NOSTRO MOOCA/✅Tabela de vendas - NOSTRO MOOCA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "b04624f37c4ba69ab047c482a88edd395a27244ea1f18da6e778fadb6c77f71b",
+          "pages": 1,
+          "reference": "10/2026",
+          "publishedSha256": "b04624f37c4ba69ab047c482a88edd395a27244ea1f18da6e778fadb6c77f71b"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/nostro-book.pdf",
+          "bytes": 8656287,
+          "source": "EMCCAMP - EQUIPE FERRARI/NOSTRO MOOCA/Nostro Mooca BOOK.pdf",
+          "sha256": "95d1c4eb7c7ee1b814889c68bac336bb5afd2f3560ebf2a6d6b3cb49a13b8318",
+          "pages": 32,
+          "reference": "10/2026",
+          "publishedSha256": "7db3485435a678899c7688fcbbbc054d9f16157ac0f9bcb4890ba0e3ca18fceb"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "line-parada",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/line-parada-tabela.pdf",
+          "bytes": 518739,
+          "source": "EMCCAMP - EQUIPE FERRARI/LINE PARADA INGLESA/✅Tabela de vendas - CONDOMINIO LINE PARADA INGLESA - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "5a0e6de84dfe83ecbe5e6248cce2d2d76b93000b53f57a7fd01d06c94455abee",
+          "pages": 5,
+          "reference": "10/2026",
+          "publishedSha256": "5a0e6de84dfe83ecbe5e6248cce2d2d76b93000b53f57a7fd01d06c94455abee"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/line-parada-book.pdf",
+          "bytes": 4277614,
+          "source": "EMCCAMP - EQUIPE FERRARI/LINE PARADA INGLESA/BOOK Line Parada Inglesa.pdf",
+          "sha256": "c1ba038c50091607b62f4245804e1b295db8f8d1aae7a8a8fc12bb4e63205715",
+          "pages": 27,
+          "reference": "10/2026",
+          "publishedSha256": "c1ba038c50091607b62f4245804e1b295db8f8d1aae7a8a8fc12bb4e63205715"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "origem",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/origem-tabela.pdf",
+          "bytes": 870280,
+          "source": "EMCCAMP - EQUIPE FERRARI/ORIGEM ITAQUERA/✅Tabela de vendas - ORIGEM ITAQUERA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "89861b6b40a467ae16315ce11557fb258096ca363a2b6ae8a2b3e51733eb5dbd",
+          "pages": 5,
+          "reference": "10/2026",
+          "publishedSha256": "89861b6b40a467ae16315ce11557fb258096ca363a2b6ae8a2b3e51733eb5dbd"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/origem-book.pdf",
+          "bytes": 5980157,
+          "source": "EMCCAMP - EQUIPE FERRARI/ORIGEM ITAQUERA/Book ORIGEM ITAQUERA.pdf",
+          "sha256": "cbec8d050ce00996a87c693d9ffcd98aa73823b9c36b1fae2618d4b3cc4649bb",
+          "pages": 17,
+          "reference": "10/2026",
+          "publishedSha256": "cbec8d050ce00996a87c693d9ffcd98aa73823b9c36b1fae2618d4b3cc4649bb"
+        }
+      },
+      "received": "2026-10-30"
+    },
+    {
+      "id": "mob-barra",
+      "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+      "files": {
+        "tabela": {
+          "url": "/assets/materiais/2026-10/mob-barra-tabela.pdf",
+          "bytes": 1041009,
+          "source": "EMCCAMP - EQUIPE FERRARI/MOB BARRA FUNDA/✅Tabela de vendas - MOB BARRA FUNDA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+          "sha256": "e15a0ee58b7ce760c92efde721c102a4f6eca2bf950d388434dd6acc984a2e5e",
+          "pages": 9,
+          "reference": "10/2026",
+          "publishedSha256": "e15a0ee58b7ce760c92efde721c102a4f6eca2bf950d388434dd6acc984a2e5e"
+        },
+        "book": {
+          "url": "/assets/materiais/2026-10/mob-barra-book.pdf",
+          "bytes": 7148221,
+          "source": "EMCCAMP - EQUIPE FERRARI/MOB BARRA FUNDA/Book Mob Barra Funda.pdf",
+          "sha256": "17b3032cc39972b3a562c8bfb6f38a356d80cbdf6cada19d9f2f7e007f0ee721",
+          "pages": 25,
+          "reference": "10/2026",
+          "publishedSha256": "00138e59f5e8211fdc925f3df254cee79e81d6935fa1604f1e4a80a339eb9075"
         }
       },
       "received": "2026-10-30"

@@ -43,7 +43,7 @@
 
 ## Atualização mensal dos materiais
 
-`team-materials.json` é o índice da edição. O importador `import_team_library.py` recebe `--reference YYYY-MM` e `--received YYYY-MM-DD` explicitamente. Exemplo desta edição: `python import_team_library.py /caminho/dos/zips --reference 2026-10 --received 2026-10-30`. Para um mês novo, importar os arquivos da edição seguinte com a nova referência, conferir documentos e atualizar o índice, mantendo as versões antigas com URLs datadas. Só mudar o rótulo do mês não atualiza nenhum preço.
+`team-materials.json` é o índice da edição. A conferência de 30/10/2026 inclui o ZIP consolidado mais recente, com 14 books e 14 tabelas, incluindo View. O importador também aceita o caminho direto de um ZIP consolidado. O importador `import_team_library.py` recebe `--reference YYYY-MM` e `--received YYYY-MM-DD` explicitamente. Exemplo desta edição: `python import_team_library.py /caminho/dos/zips --reference 2026-10 --received 2026-10-30`. Para um mês novo, importar os arquivos da edição seguinte com a nova referência, conferir documentos e atualizar o índice, mantendo as versões antigas com URLs datadas. Só mudar o rótulo do mês não atualiza nenhum preço.
 
 Para uma sincronização automática a partir do Drive será necessário identificar a pasta principal, mapear cada empreendimento, decidir as regras de publicação comercial e configurar acesso de leitura ao servidor. Não prometer que trocar um arquivo no Drive já atualiza esta versão do portal: isso ainda não está conectado.
 

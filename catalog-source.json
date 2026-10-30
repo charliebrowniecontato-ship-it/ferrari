@@ -723,7 +723,10 @@
     ],
     "highlight": "Opções garden",
     "address": "Rua Novo Oriente do Piauí, 35",
-    "links": {},
+    "links": {
+      "book": "/assets/materiais/2026-10/view-book.pdf",
+      "tabela": "/assets/materiais/2026-10/view-tabela.pdf"
+    },
     "image": "assets/view-r3.webp",
     "facade": "assets/view-r3.webp",
     "areaNote": "Faixa do book, incluindo unidades garden. Consulte a unidade.",
@@ -740,8 +743,30 @@
         "caption": "Salão de festas",
         "width": 1591,
         "height": 1123
+      },
+      {
+        "src": "assets/view-planta-17-20261030.webp",
+        "width": 1800,
+        "height": 1273,
+        "caption": "Plantas e opções garden · 1 de 3",
+        "type": "plan"
+      },
+      {
+        "src": "assets/view-planta-18-20261030.webp",
+        "width": 1800,
+        "height": 1273,
+        "caption": "Plantas e opções garden · 2 de 3",
+        "type": "plan"
+      },
+      {
+        "src": "assets/view-planta-19-20261030.webp",
+        "width": 1800,
+        "height": 1273,
+        "caption": "Plantas e opções garden · 3 de 3",
+        "type": "plan"
       }
-    ]
+    ],
+    "tableReference": "10/2026"
   },
   {
     "id": "nostro",

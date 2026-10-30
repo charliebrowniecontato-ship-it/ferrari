@@ -1,0 +1,237 @@
+{
+  "verified": "2026-10-30",
+  "archive": "EMCCAMP - EQUIPE FERRARI-20261030T215634Z-1-001.zip",
+  "archiveSha256": "5911dd31cf1626bd39b0188e93eb93170c140f9b4f522524ea23ebda567352a7",
+  "propertyCount": 14,
+  "pdfCount": 28,
+  "unchangedSourcePdfs": 26,
+  "addedSourcePdfs": 2,
+  "decodedActiveImages": 129,
+  "pdfs": [
+    {
+      "property": "serena",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/SERENA/✅Tabela de vendas - SERENA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "aeda7d653ad0bde1b390c3c4b14f9a6a76813141c515128f37632c1be4966f44",
+      "publishedSha256": "aeda7d653ad0bde1b390c3c4b14f9a6a76813141c515128f37632c1be4966f44",
+      "status": "unchanged"
+    },
+    {
+      "property": "altus",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/ALTUS/✅Tabela de vendas - RESIDENCIAL ALTUS VILA PRUDENTE - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "4c605b0095a6bad0434f5fd3d15b48780a6582850db668fca58337cbf6561e53",
+      "publishedSha256": "4c605b0095a6bad0434f5fd3d15b48780a6582850db668fca58337cbf6561e53",
+      "status": "unchanged"
+    },
+    {
+      "property": "iconico",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/ICÔNICO/✅Tabela de vendas - CONDOMINIO ICONICO JARAGUA - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "a545ff160c65f2588719371cc02167462fa2529cab4164fff89a9471310508d9",
+      "publishedSha256": "a545ff160c65f2588719371cc02167462fa2529cab4164fff89a9471310508d9",
+      "status": "unchanged"
+    },
+    {
+      "property": "vision",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/VISION PENHA/✅Tabela de vendas - CONDOMÍNIO VISION PENHA - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "5c6d3a5447a5325fbc6b867e8fb3d23321ec9094caf3c9b0a7fe92fc7e070f38",
+      "publishedSha256": "5c6d3a5447a5325fbc6b867e8fb3d23321ec9094caf3c9b0a7fe92fc7e070f38",
+      "status": "unchanged"
+    },
+    {
+      "property": "view",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/VIEW PARQUE ECOLÔGICO/✅Tabela de vendas - VIEW PARQUE ECOLÓGICO BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "96117eebba30f84982878b2f6b07cbcdfb5880cc678ce819e72e78f3c7b77c9b",
+      "publishedSha256": "96117eebba30f84982878b2f6b07cbcdfb5880cc678ce819e72e78f3c7b77c9b",
+      "status": "added"
+    },
+    {
+      "property": "villagio",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/VILLAGIO/✅Tabela de vendas - VILLAGIO DOS EUCALIPTOS - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "156d7d05bf1d5548dd966ef91ae60bbb7970460bd706142b626f6d7498f5cf2c",
+      "publishedSha256": "156d7d05bf1d5548dd966ef91ae60bbb7970460bd706142b626f6d7498f5cf2c",
+      "status": "unchanged"
+    },
+    {
+      "property": "line-praca",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/LINE PRAÇA DA ÁRVORE /✅Tabela de vendas - LINE PRAÇA DA ÁRVORE BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "b71c2b18ac84de8d39507937d887caf5c25bc934289cfb3be5dce809fb84348e",
+      "publishedSha256": "b71c2b18ac84de8d39507937d887caf5c25bc934289cfb3be5dce809fb84348e",
+      "status": "unchanged"
+    },
+    {
+      "property": "mob-campo",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/MOB CAMPO LIMPO/✅Tabela de vendas - MOB CAMPO LIMPO BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "f890bc4b3e8a9a17ee670aaf57da6c2b19bfa9e864f1049dfd3ade63fdb9e27f",
+      "publishedSha256": "f890bc4b3e8a9a17ee670aaf57da6c2b19bfa9e864f1049dfd3ade63fdb9e27f",
+      "status": "unchanged"
+    },
+    {
+      "property": "sinfonia",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/SINFÔNIA/✅Tabela de vendas - SINFONIA SANTO AMARO - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "3ac988dcc343677a08e7e61ee06de357fc154d69fc0f909ae847af2a6789e12f",
+      "publishedSha256": "3ac988dcc343677a08e7e61ee06de357fc154d69fc0f909ae847af2a6789e12f",
+      "status": "unchanged"
+    },
+    {
+      "property": "atlas",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/ATLAS/BOOK Atlas Sacomã.pdf",
+      "sourceSha256": "d816f05723545df7cdef545f7a02c8db5e80099760a5e945b2f985f06941f0a6",
+      "publishedSha256": "390bc0293172d1b56a6898c8a573958d356a6aacaaca6505dd9c866c4cf4574b",
+      "status": "unchanged"
+    },
+    {
+      "property": "nostro",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/NOSTRO MOOCA/✅Tabela de vendas - NOSTRO MOOCA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "b04624f37c4ba69ab047c482a88edd395a27244ea1f18da6e778fadb6c77f71b",
+      "publishedSha256": "b04624f37c4ba69ab047c482a88edd395a27244ea1f18da6e778fadb6c77f71b",
+      "status": "unchanged"
+    },
+    {
+      "property": "line-parada",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/LINE PARADA INGLESA/✅Tabela de vendas - CONDOMINIO LINE PARADA INGLESA - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "5a0e6de84dfe83ecbe5e6248cce2d2d76b93000b53f57a7fd01d06c94455abee",
+      "publishedSha256": "5a0e6de84dfe83ecbe5e6248cce2d2d76b93000b53f57a7fd01d06c94455abee",
+      "status": "unchanged"
+    },
+    {
+      "property": "origem",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/ORIGEM ITAQUERA/✅Tabela de vendas - ORIGEM ITAQUERA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "89861b6b40a467ae16315ce11557fb258096ca363a2b6ae8a2b3e51733eb5dbd",
+      "publishedSha256": "89861b6b40a467ae16315ce11557fb258096ca363a2b6ae8a2b3e51733eb5dbd",
+      "status": "unchanged"
+    },
+    {
+      "property": "mob-barra",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/MOB BARRA FUNDA/✅Tabela de vendas - MOB BARRA FUNDA BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "e15a0ee58b7ce760c92efde721c102a4f6eca2bf950d388434dd6acc984a2e5e",
+      "publishedSha256": "e15a0ee58b7ce760c92efde721c102a4f6eca2bf950d388434dd6acc984a2e5e",
+      "status": "unchanged"
+    },
+    {
+      "property": "atlas",
+      "kind": "tabela",
+      "source": "EMCCAMP - EQUIPE FERRARI/ATLAS/✅Tabela de vendas - ATLAS SACOMÃ BY EMCCAMP - OUTUBRO - EQUIPE FERRARI.pdf",
+      "sourceSha256": "0136dc1a9e8c29d3c737cb474a12b86c1c518a1219a86ce1e1ee6a9cc7b322a8",
+      "publishedSha256": "0136dc1a9e8c29d3c737cb474a12b86c1c518a1219a86ce1e1ee6a9cc7b322a8",
+      "status": "unchanged"
+    },
+    {
+      "property": "altus",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/ALTUS/BOOK ALTUS.pdf",
+      "sourceSha256": "2e5b418975915f555b15d9ef295b04ba868d02502cd2b0384532467366cfff62",
+      "publishedSha256": "1c44b824c25a2b6bd08f206191d13d43e93ca9d180e5bd18dab4873d6c01e68b",
+      "status": "unchanged"
+    },
+    {
+      "property": "line-parada",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/LINE PARADA INGLESA/BOOK Line Parada Inglesa.pdf",
+      "sourceSha256": "c1ba038c50091607b62f4245804e1b295db8f8d1aae7a8a8fc12bb4e63205715",
+      "publishedSha256": "c1ba038c50091607b62f4245804e1b295db8f8d1aae7a8a8fc12bb4e63205715",
+      "status": "unchanged"
+    },
+    {
+      "property": "serena",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/SERENA/Book Serena.pdf",
+      "sourceSha256": "bc2200a0c8022a11b74fa6262a3a275447e6c9f4d5b83a51370c06a95e4e9b1b",
+      "publishedSha256": "72d137432349281590eae103c5d369de379d7d51d2d4dfd9064a321df1879a1c",
+      "status": "unchanged"
+    },
+    {
+      "property": "vision",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/VISION PENHA/Book Vision Penha (1).pdf",
+      "sourceSha256": "f59fdcc689679f8fbcd2559301eac0a8fa62a033be92a1b874064d9a0497519b",
+      "publishedSha256": "f59fdcc689679f8fbcd2559301eac0a8fa62a033be92a1b874064d9a0497519b",
+      "status": "unchanged"
+    },
+    {
+      "property": "iconico",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/ICÔNICO/BOOK ICÔNICO_EQUIPE BIBI.pdf",
+      "sourceSha256": "585cb1fc09b114ef13b189d71ffe6e0e9ca19310592b0c1294536e58935dbc86",
+      "publishedSha256": "a7fbc441f1fa0ee033f2e26d76b7f390de71f0bebd023ce3a83f9b1e164b34c4",
+      "status": "unchanged"
+    },
+    {
+      "property": "view",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/VIEW PARQUE ECOLÔGICO/BOOK View Parque Ecolôgico.pdf",
+      "sourceSha256": "c13006e4c94556c22e12dd7324ba4669de4928b2c974d255d5b2dca94d86da90",
+      "publishedSha256": "aebfba6dce0962c11000b96b90552e925c02ce7d1b3e29e28efab78871fb0f15",
+      "status": "added"
+    },
+    {
+      "property": "villagio",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/VILLAGIO/Book Villagio.pdf",
+      "sourceSha256": "faab99c9a90a438761e967661a30f1e0cd5a164ce737c3d75ca0efc08c42b2dd",
+      "publishedSha256": "d738857d0f10f6a783085669570d9a4ffc5312f00e6a494e2877eba43ea32ce2",
+      "status": "unchanged"
+    },
+    {
+      "property": "nostro",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/NOSTRO MOOCA/Nostro Mooca BOOK.pdf",
+      "sourceSha256": "95d1c4eb7c7ee1b814889c68bac336bb5afd2f3560ebf2a6d6b3cb49a13b8318",
+      "publishedSha256": "7db3485435a678899c7688fcbbbc054d9f16157ac0f9bcb4890ba0e3ca18fceb",
+      "status": "unchanged"
+    },
+    {
+      "property": "line-praca",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/LINE PRAÇA DA ÁRVORE /BOOK LINE Praça da Arvore.pdf",
+      "sourceSha256": "4cb6418090b7d8d86d520313515a5cf3c75392bb1e8b85955564f6ac194cefed",
+      "publishedSha256": "c72bd7b28480caeabea642e73bf858feb9dd0c8845cffb4fdc1e5ad64ad9e993",
+      "status": "unchanged"
+    },
+    {
+      "property": "origem",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/ORIGEM ITAQUERA/Book ORIGEM ITAQUERA.pdf",
+      "sourceSha256": "cbec8d050ce00996a87c693d9ffcd98aa73823b9c36b1fae2618d4b3cc4649bb",
+      "publishedSha256": "cbec8d050ce00996a87c693d9ffcd98aa73823b9c36b1fae2618d4b3cc4649bb",
+      "status": "unchanged"
+    },
+    {
+      "property": "sinfonia",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/SINFÔNIA/BOOK Sinfônia.pdf",
+      "sourceSha256": "352eecc38a5b98c5b32c67d5460eaf9cfe5f1d4668665d377f0c50c76c48edc3",
+      "publishedSha256": "ae1c85cfdc94b7c2d7cb1d75899e6cfa38b89bc2fa909edc2ba64dc8c1094d1a",
+      "status": "unchanged"
+    },
+    {
+      "property": "mob-barra",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/MOB BARRA FUNDA/Book Mob Barra Funda.pdf",
+      "sourceSha256": "17b3032cc39972b3a562c8bfb6f38a356d80cbdf6cada19d9f2f7e007f0ee721",
+      "publishedSha256": "00138e59f5e8211fdc925f3df254cee79e81d6935fa1604f1e4a80a339eb9075",
+      "status": "unchanged"
+    },
+    {
+      "property": "mob-campo",
+      "kind": "book",
+      "source": "EMCCAMP - EQUIPE FERRARI/MOB CAMPO LIMPO/BOOK MOB Campo LImpo.pdf",
+      "sourceSha256": "5f2e457d930c55f3722f3e797c0a086ea06f5a8b5df4cf0ba09f6bdc1ee453f7",
+      "publishedSha256": "2418434cfa6b734d0de95b50e786580d87332e4085ff9be67998b37608ad2199",
+      "status": "unchanged"
+    }
+  ],
+  "scope": "Compared with latest supplied archive; no live Google Drive synchronization."
+}

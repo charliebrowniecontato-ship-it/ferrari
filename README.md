@@ -72,7 +72,7 @@ O arquivo mais recente com sufixo `(2).zip` não pôde ser aberto nesta sessão.
 
 ## Central da equipe e cadastro corporativo — 30/10/2026
 
-A central da Equipe Ferrari está em `/equipe/`, preservando o visual aprovado; `/materiais/` passa a redirecionar para ela. `team-materials.json` indexa os 13 ZIPs comerciais recebidos, com books em PDF e tabelas de referência datadas. As 13 plantas ilustrativas adicionais têm origem e página registradas em `media-source/plans-audit-20261030.json`. O View mantém os materiais já recebidos anteriormente; seu ZIP específico não estava no novo lote.
+A central da Equipe Ferrari está em `/equipe/`, preservando o visual aprovado; `/materiais/` passa a redirecionar para ela. `team-materials.json` indexa o ZIP consolidado mais recente, com 14 books em PDF e 14 tabelas de referência de outubro/2026. Os 26 PDFs dos 13 empreendimentos anteriores mantêm os mesmos hashes dos originais já conferidos; o book e a tabela do View foram incorporados. As galerias dos 14 empreendimentos contam com plantas: 13 páginas anteriores e 3 páginas do View, com origem e página registradas em `media-source/plans-audit-20261030.json`. O importador aceita tanto uma pasta de ZIPs individuais quanto um ZIP consolidado e rejeita pastas sem mapeamento, duplicidades ou pares incompletos de book/tabela.
 
 O cadastro corporativo `/parcerias/` possui quatro etapas, revisão, anexos e um endpoint servidor. **O envio está desativado até a configuração na conta Google de Ferrari.** Não houve envio de e-mail real nem coleta de documentos de clientes. As imagens de referência mostram um cadastro de corretores e não confirmam a lista documental das imobiliárias.
 

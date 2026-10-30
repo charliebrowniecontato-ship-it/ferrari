@@ -62,11 +62,14 @@ for path in root.rglob('*'):
   for number in re.findall(r'wa\.me/(\d+)',text):assert number=='5511932362552',(path,number)
 assert all('/assets/materiais/' in str(p) for p in root.rglob('*.pdf')), 'PDF outside the approved commercial library'
 manifest=json.loads(Path('team-materials.json').read_text())
+assert {p['id'] for p in manifest['properties']}=={p['id'] for p in props}, 'Missing property materials'
+assert all(set(p['files'])=={'book','tabela'} for p in manifest['properties']), 'Missing book or table'
 import hashlib,fitz
 for material in manifest['properties']:
  for kind,item in material['files'].items():
   file=root/item['url'].lstrip('/')
   assert file.is_file() and file.stat().st_size==item['bytes'],file
   assert len(fitz.open(file))==item['pages'],file
+  if item.get('publishedSha256'):assert hashlib.sha256(file.read_bytes()).hexdigest()==item['publishedSha256'],(file,'published PDF changed')
   if kind=='tabela':assert hashlib.sha256(file.read_bytes()).hexdigest()==item['sha256'],(file,'sales table changed')
 print('PASS: 14 reviewed property records; media dimensions; institutional WhatsApp; commercial PDFs confined to the dated library; sales tables preserved byte for byte.')
