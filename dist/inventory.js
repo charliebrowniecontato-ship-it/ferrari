@@ -36,7 +36,7 @@ window.FerrariInventory = (() => {
     return `<div class="inventory-offer">
       <small>Black November EMCCAMP</small>
       <strong>${money(discount)} de desconto</strong>
-      ${expanded ? '<p>Em unidades participantes. Consulte com a Ferrari a elegibilidade e o valor final.</p>' : ''}
+      ${expanded ? '<p>Em unidades participantes. Consulte com o Ferrari a elegibilidade e o valor final.</p>' : ''}
     </div>`;
   }
 

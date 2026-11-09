@@ -59,7 +59,7 @@ notes='Imagens ilustrativas. Metragens, disponibilidade, endereço, previsões d
 page_js='''<script src="/inventory.js" defer></script><script src="/property-page.js" defer></script>'''
 for p in props:
  path='/imoveis/'+p['id']+'/'
- rooms=beds(p);description=f"{p['name']} em {p['neighborhood']}, {p['city']}: {rooms}, {p['area']} m². Conheça os diferenciais e consulte condições com a Ferrari."
+ rooms=beds(p);description=f"{p['name']} em {p['neighborhood']}, {p['city']}: {rooms}, {p['area']} m². Conheça os diferenciais e consulte condições com o Ferrari."
  # A structured description, without speculative price, stock or reviews.
  residence={'@type':'Residence' if p['id']=='villagio' else 'ApartmentComplex','@id':pageurl(p)+'#empreendimento','name':p['name'],'description':p['description'],'image':BASE+'/'+p['image'],'address':{'@type':'PostalAddress','addressLocality':p['city'],'addressRegion':'SP','addressCountry':'BR'}}
  graph={'@context':'https://schema.org','@graph':[agent,website,residence,{'@type':'WebPage','@id':pageurl(p)+'#pagina','url':pageurl(p),'name':p['name']+' | Ferrari Assessoria Imobiliária','inLanguage':'pt-BR','isPartOf':{'@id':BASE+'/#website'},'about':{'@id':pageurl(p)+'#empreendimento'},'breadcrumb':{'@id':pageurl(p)+'#breadcrumb'}},{'@type':'BreadcrumbList','@id':pageurl(p)+'#breadcrumb','itemListElement':[{'@type':'ListItem','position':1,'name':'Início','item':BASE+'/'},{'@type':'ListItem','position':2,'name':p['name'],'item':pageurl(p)}]}]}
