@@ -7,7 +7,7 @@ Dois dormitórios e lazer para viver seus próximos momentos na Vila Sílvia.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 40 a 41 m².
 - Fase: Em obras.
-- Entrega prevista: Jul/2028.
+- Entrega prevista: Abr/2027.
 - Diferencial: Lazer em condomínio.
 
 ## Lazer e conveniências

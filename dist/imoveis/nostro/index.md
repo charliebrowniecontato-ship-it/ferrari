@@ -6,7 +6,7 @@ Plantas de dois e três dormitórios, opções com suíte e lazer em condomínio
 - Bairro: Mooca.
 - Plantas: 2 e 3 dormitórios.
 - Metragem informada no book: 40 a 79 m².
-- Fase: Consultar fase.
+- Fase: Pronto para morar.
 - Entrega prevista: Confirmar com o atendimento.
 - Diferencial: Condomínio-clube.
 

@@ -7,7 +7,7 @@ Varanda, vaga e espaço para a sua rotina acontecer.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 41,77 a 45,27 m².
 - Fase: Lançamento.
-- Entrega prevista: Dez/2028.
+- Entrega prevista: Out/2028.
 - Diferencial: Vaga e varanda.
 
 ## Lazer e conveniências

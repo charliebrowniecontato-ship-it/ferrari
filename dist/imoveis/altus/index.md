@@ -6,8 +6,8 @@ Seu novo endereço na Vila Prudente, com lazer para toda a família.
 - Bairro: Vila Prudente.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 42 a 45 m².
-- Fase: Em obras.
-- Entrega prevista: Nov/2026.
+- Fase: Pronto para morar.
+- Entrega prevista: Confirmar com o atendimento.
 - Diferencial: Piscina e lazer.
 
 ## Lazer e conveniências

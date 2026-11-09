@@ -7,7 +7,7 @@ Dois dormitórios, varanda e lazer para aproveitar todos os dias.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 37,99 a 39,47 m².
 - Fase: Lançamento.
-- Entrega prevista: Dez/2028.
+- Entrega prevista: Ago/2028.
 - Diferencial: Com varanda.
 
 ## Lazer e conveniências

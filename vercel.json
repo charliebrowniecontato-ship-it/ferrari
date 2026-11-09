@@ -62,6 +62,16 @@
       "source": "/materiais/",
       "destination": "/equipe/",
       "permanent": true
+    },
+    {
+      "source": "/tabela",
+      "destination": "https://dashboard-emccamp.vercel.app/tabela-publica/afda4280e88e49f6a019c2d95a6b4f375e758e22ea8ff495",
+      "permanent": false
+    },
+    {
+      "source": "/tabela/",
+      "destination": "https://dashboard-emccamp.vercel.app/tabela-publica/afda4280e88e49f6a019c2d95a6b4f375e758e22ea8ff495",
+      "permanent": false
     }
   ],
   "functions": {

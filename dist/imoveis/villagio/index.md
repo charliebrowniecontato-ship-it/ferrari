@@ -7,7 +7,7 @@ Casas de dois dormitórios com suíte e lazer em condomínio no bairro Medeiros.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 50,73 a 58,78 m².
 - Fase: Em obras.
-- Entrega prevista: Ago/2028.
+- Entrega prevista: Jun/2027.
 - Diferencial: Casas com suíte.
 
 ## Lazer e conveniências

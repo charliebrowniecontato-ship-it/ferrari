@@ -7,7 +7,7 @@ Mais possibilidades para morar bem em Santo Amaro.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 41,17 a 69,85 m².
 - Fase: Lançamento.
-- Entrega prevista: Dez/2028.
+- Entrega prevista: Fev/2029.
 - Diferencial: Varanda e opção de vaga.
 
 ## Lazer e conveniências

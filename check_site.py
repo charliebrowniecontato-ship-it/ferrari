@@ -5,6 +5,7 @@ from collections import Counter
 import json,re,xml.etree.ElementTree as ET
 from PIL import Image
 root=Path('dist');base='https://ferrariassessoria.com'
+redirects={r['source'] for r in json.loads(Path('vercel.json').read_text())['redirects']}
 class HTML(HTMLParser):
  def __init__(self):super().__init__();self.tags=[]
  def handle_starttag(self,t,a):self.tags.append((t,dict(a)))
@@ -22,7 +23,7 @@ for page in pages:
   for attr in ['src','href']:
    link=a.get(attr,'');u=urlparse(link)
    if u.scheme in ['https','http','tel','mailto'] or link.startswith('#') or not link:continue
-   if u.path.startswith('/'):assert resolve(u.path).is_file(),(page,link)
+   if u.path.startswith('/'):assert u.path in redirects or resolve(u.path).is_file(),(page,link)
   if t=='img':
    assert 'alt'in a and a.get('width') and a.get('height'),(page,'image accessibility/size')
    for candidate in a.get('srcset','').split(','):

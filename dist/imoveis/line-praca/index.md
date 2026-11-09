@@ -7,7 +7,7 @@ Apartamentos de 1 e 2 dormitórios para viver a Zona Sul.
 - Plantas: 1 e 2 dormitórios.
 - Metragem informada no book: 31,23 a 40,48 m².
 - Fase: Em obras.
-- Entrega prevista: Mar/2028.
+- Entrega prevista: Mai/2028.
 - Diferencial: Consultar opções.
 
 ## Lazer e conveniências

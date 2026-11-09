@@ -68,13 +68,11 @@ def main():
   if not catalog_path.is_file():continue
   catalog=json.loads(catalog_path.read_text());by={item['id']:item['files'] for item in manifest}
   for prop in catalog:
-   for kind in ['book','tabela']:
-    item=by.get(prop['id'],{}).get(kind)
-    if not item:continue
-    old=prop['links'].get(kind)
-    if old and old.startswith('https://'):prop['links'][kind+'_drive']=old
-    prop['links'][kind]=item['url']
-    if kind=='tabela':prop['tableReference']=item['reference']
+   book=by.get(prop['id'],{}).get('book')
+   if not book:continue
+   old=prop['links'].get('book')
+   if old and old.startswith('https://'):prop['links']['book_drive']=old
+   prop['links']['book']=book['url']
   catalog_path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
  print('Commercial library:',len(manifest),'properties. Original sales tables copied without changing values.')
 if __name__=='__main__':main()

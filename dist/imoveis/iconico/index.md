@@ -7,7 +7,7 @@ Dois dormitórios e espaços para compartilhar bons momentos.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 40,46 a 41,80 m².
 - Fase: Em obras.
-- Entrega prevista: Set/2028.
+- Entrega prevista: Jan/2028.
 - Diferencial: Lazer em diferentes níveis.
 
 ## Lazer e conveniências

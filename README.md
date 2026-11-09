@@ -77,3 +77,7 @@ A central da Equipe Ferrari está em `/equipe/`, preservando o visual aprovado; 
 O cadastro corporativo `/parcerias/` possui quatro etapas, revisão, anexos e um endpoint servidor. **O envio está desativado até a configuração na conta Google de Ferrari.** Não houve envio de e-mail real nem coleta de documentos de clientes. As imagens de referência mostram um cadastro de corretores e não confirmam a lista documental das imobiliárias.
 
 Veja `docs/CADASTRO-EQUIPE-FERRARI.md` para ativação, dados pendentes, operação mensal e comportamento de privacidade. A pasta Google Drive principal e o link do formulário de referência não foram fornecidos; os materiais desta publicação vêm dos ZIPs, sem sincronização automática com o Drive. A documentação de implantação fica fora da interface do cliente.
+
+## Tabela de vendas online
+
+A rota `/tabela/` redireciona para o espelho público da EMCCAMP configurado em `vercel.json`. A central e as fichas usam essa rota para consultar preços e disponibilidade. O espelho de novembro/2026 também orientou a revisão dos prazos de entrega e endereços de plantão. Os PDFs de outubro permanecem no acervo datado e os books continuam disponíveis na central.

@@ -7,7 +7,7 @@ Dois dormitórios, opções garden e lazer para viver a Zona Leste.
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 40,09 a 55,97 m².
 - Fase: Lançamento.
-- Entrega prevista: Confirmar com o atendimento.
+- Entrega prevista: Set/2028.
 - Diferencial: Opções garden.
 
 ## Lazer e conveniências

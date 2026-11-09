@@ -7,7 +7,7 @@ Dois dormitórios com varanda e opções com vaga para uma nova história em Ita
 - Plantas: 2 dormitórios.
 - Metragem informada no book: 40 a 45 m².
 - Fase: Em obras.
-- Entrega prevista: Out/2027.
+- Entrega prevista: Jan/2028.
 - Diferencial: Opções com vaga.
 
 ## Lazer e conveniências
