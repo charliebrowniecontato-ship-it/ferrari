@@ -30,7 +30,7 @@
       ]
     },
     {
-      "source": "/(styles.css|app.js|site-ui.js|property-page.js|site-tools.js|partnership.js)",
+      "source": "/(styles.css|app.js|inventory.js|site-ui.js|property-page.js|site-tools.js|partnership.js)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -65,18 +65,21 @@
     },
     {
       "source": "/tabela",
-      "destination": "https://dashboard-emccamp.vercel.app/tabela-publica/afda4280e88e49f6a019c2d95a6b4f375e758e22ea8ff495",
+      "destination": "/#imoveis",
       "permanent": false
     },
     {
       "source": "/tabela/",
-      "destination": "https://dashboard-emccamp.vercel.app/tabela-publica/afda4280e88e49f6a019c2d95a6b4f375e758e22ea8ff495",
+      "destination": "/#imoveis",
       "permanent": false
     }
   ],
   "functions": {
     "api/parcerias.mjs": {
       "maxDuration": 30
+    },
+    "api/disponibilidade.mjs": {
+      "maxDuration": 10
     }
   }
 }

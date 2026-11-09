@@ -37,9 +37,22 @@ if(planningForm){
 }
 const materialSearch=document.getElementById('material-search');
 if(materialSearch){
- const region=document.getElementById('material-region');const cards=[...document.querySelectorAll('[data-material-name]')];
+ const region=document.getElementById('material-region');
+ const cards=[...document.querySelectorAll('[data-material-name]')];
+ const inventoryUI=window.FerrariInventory;
+ const status=document.getElementById('material-count');
+ let inventory;
+ inventoryUI.load().then(entries=>{
+  inventory=entries;
+  document.getElementById('team-available-count').textContent=cards.filter(card=>Object.hasOwn(entries,card.dataset.projectId)).length;
+  cards.forEach(card=>{
+   const entry=entries[card.dataset.projectId];
+   if(entry)card.querySelector('[data-material-stock]').textContent=inventoryUI.price(entry.price)+' · '+inventoryUI.stock(entry.units);
+  });
+  filter();
+ }).catch(()=>{status.textContent=inventoryUI.unavailable});
  const normalize=value=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
- const filter=()=>{const q=normalize(materialSearch.value.trim());let count=0;cards.forEach(card=>{const matches=normalize(card.dataset.materialName).includes(q)&&(region.value==='all'||card.dataset.materialRegion===region.value);card.hidden=!matches;if(matches)count++});document.getElementById('material-count').textContent=count+' empreendimento'+(count===1?'':'s');document.getElementById('material-empty').hidden=count!==0};
+ const filter=()=>{if(!inventory)return;const q=normalize(materialSearch.value.trim());let count=0;cards.forEach(card=>{const matches=Object.hasOwn(inventory,card.dataset.projectId)&&normalize(card.dataset.materialName).includes(q)&&(region.value==='all'||card.dataset.materialRegion===region.value);card.hidden=!matches;if(matches)count++});status.textContent=count+' empreendimento'+(count===1?'':'s');document.getElementById('material-empty').hidden=count!==0};
  materialSearch.addEventListener('input',filter);region.addEventListener('change',filter);
  let timer;const notify=message=>{const toast=document.getElementById('toast');toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),3000)};
  document.addEventListener('click',event=>{const button=event.target.closest('[data-copy-property]');if(button)window.FerrariUI.share(button.dataset.title,'https://ferrariassessoria.com/imoveis/'+button.dataset.copyProperty+'/',button,notify)});

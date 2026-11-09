@@ -38,7 +38,7 @@ Para regenerar os arquivos após alterar imagens ou catálogo, execute `python b
 
 Domínio canônico de produção: https://ferrariassessoria.com.
 
-O projeto é estático e não exige banco, chaves ou variáveis de ambiente. `vercel.json` usa `dist` como saída, preserva URLs com barra final e não executa instalação ou build remoto. Execute `python build_site.py` para atualizar o conteúdo antes de enviar. O domínio `www.ferrariassessoria.com` deve redirecionar para `ferrariassessoria.com`.
+O site usa páginas estáticas e funções Vercel para disponibilidade e cadastro. `vercel.json` usa `dist` como saída, preserva URLs com barra final e não executa instalação ou build remoto. Execute `python build_site.py` para atualizar o conteúdo antes de enviar. O domínio `www.ferrariassessoria.com` deve redirecionar para `ferrariassessoria.com`.
 
 Projeto Vercel: `ferrari-assessoria` (`prj_La1iEQf8J6Mna18ZbTSpc4MSc6h7`), equipe `charliebrowniecontato-7772`. Publicação pública: https://ferrari-assessoria.vercel.app.
 
@@ -80,4 +80,4 @@ Veja `docs/CADASTRO-EQUIPE-FERRARI.md` para ativação, dados pendentes, operaç
 
 ## Tabela de vendas online
 
-A rota `/tabela/` redireciona para o espelho público da EMCCAMP configurado em `vercel.json`. A central e as fichas usam essa rota para consultar preços e disponibilidade. O espelho de novembro/2026 também orientou a revisão dos prazos de entrega e endereços de plantão. Os PDFs de outubro permanecem no acervo datado e os books continuam disponíveis na central.
+O catálogo, a central e as fichas consultam `/api/disponibilidade/`. A função usa a visão pública do espelho EMCCAMP, devolve apenas as tipologias residenciais com estoque e mantém o resultado em cache por até um minuto. `/tabela/` encaminha para o catálogo Ferrari. Configure `EMCCAMP_TABLE_TOKEN` com o identificador do novo link quando a EMCCAMP substituir o atual. Novos empreendimentos exigem ficha e mapeamento em `lib/inventory.mjs`. Os PDFs de outubro permanecem no acervo datado.
