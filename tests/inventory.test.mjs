@@ -26,3 +26,21 @@ test('only known projects with residential units in stock reach the site', () =>
     ['2 dormitórios', null, '']
   ]);
 });
+
+test('November offers follow São Paulo calendar and stay separate from stock prices', () => {
+  const input = {
+    uf: 'SP',
+    developments: [
+      { development: 'CONDOMÍNIO VISION PENHA', groups: [{ typology: '2Q', free: 1, minPrice: 436361 }] },
+      { development: 'ATLAS SACOMÃ BY EMCCAMP', groups: [{ typology: '2Q', free: 1, minPrice: 310000 }] },
+      { development: 'SERENA RESIDENCE', groups: [{ typology: '2Q', free: 0 }] }
+    ]
+  };
+  const november = readInventory(input, Date.parse('2026-11-01T03:00:00Z'));
+  assert.deepEqual(november.vision.blackNovember, { discount: 30000, prize: 6000 });
+  assert.equal(november.vision.price, 436361);
+  assert.deepEqual(november.atlas.blackNovember, { discount: 0, prize: 2000 });
+  assert.equal(november.serena, undefined);
+  assert.equal(readInventory(input, Date.parse('2026-11-01T02:59:59Z')).vision.blackNovember, undefined);
+  assert.equal(readInventory(input, Date.parse('2026-12-01T03:00:00Z')).vision.blackNovember, undefined);
+});

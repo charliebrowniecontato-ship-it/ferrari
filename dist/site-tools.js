@@ -47,7 +47,17 @@ if(materialSearch){
   document.getElementById('team-available-count').textContent=cards.filter(card=>Object.hasOwn(entries,card.dataset.projectId)).length;
   cards.forEach(card=>{
    const entry=entries[card.dataset.projectId];
-   if(entry)card.querySelector('[data-material-stock]').textContent=inventoryUI.price(entry.price)+' · '+inventoryUI.stock(entry.units);
+   if(!entry)return;
+   const summary=card.querySelector('[data-material-stock]');
+   summary.textContent=inventoryUI.price(entry.price)+' · '+inventoryUI.stock(entry.units);
+   const offer=entry.blackNovember;
+   if(offer){
+    const campaign=document.createElement('p');
+    campaign.className='team-campaign';
+    const discount=offer.discount ? ' · Desconto em unidades participantes: '+inventoryUI.money(offer.discount) : '';
+    campaign.textContent='Black November · Premiação comercial: '+inventoryUI.money(offer.prize)+discount;
+    summary.after(campaign);
+   }
   });
   filter();
  }).catch(()=>{status.textContent=inventoryUI.unavailable});

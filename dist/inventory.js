@@ -27,7 +27,18 @@ window.FerrariInventory = (() => {
   }
 
   const stock = units => `${units} ${units === 1 ? 'unidade disponível' : 'unidades disponíveis'}`;
-  const price = amount => amount ? `A partir de ${currency.format(amount)}` : 'Preço sob consulta';
+  const money = amount => currency.format(amount);
+  const price = amount => amount ? `A partir de ${money(amount)}` : 'Preço sob consulta';
+
+  function offerHTML(entry, expanded = false) {
+    const discount = entry.blackNovember?.discount;
+    if (!discount) return '';
+    return `<div class="inventory-offer">
+      <small>Black November EMCCAMP</small>
+      <strong>${money(discount)} de desconto</strong>
+      ${expanded ? '<p>Em unidades participantes. Consulte com a Ferrari a elegibilidade e o valor final.</p>' : ''}
+    </div>`;
+  }
 
   function optionsHTML(entry) {
     if (!entry) return '<p>Sem unidades disponíveis no momento. <a href="/#imoveis">Veja outras opções</a>.</p>';
@@ -39,10 +50,10 @@ window.FerrariInventory = (() => {
         <div><strong>${price(option.price)}</strong><small>${stock(option.units)}</small></div>
       </li>`;
     }).join('');
-    return `<ul class="inventory-options">${rows}</ul>
+    return `${offerHTML(entry, true)}<ul class="inventory-options">${rows}</ul>
       <p class="inventory-note">Fonte: espelho de vendas da EMCCAMP. Preços e disponibilidade sujeitos a confirmação.</p>`;
   }
 
   const unavailable = 'A disponibilidade está temporariamente indisponível. Consulte a equipe pelo WhatsApp.';
-  return { load, area, stock, price, optionsHTML, unavailable };
+  return { load, area, stock, price, money, offerHTML, optionsHTML, unavailable };
 })();

@@ -82,3 +82,32 @@
   .inventory-option { grid-template-columns: 1fr; gap: 6px; }
   .inventory-option div:last-child { text-align: left; }
 }
+
+.november-campaign {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+  padding: clamp(16px, 3vw, 25px);
+  margin-bottom: 24px;
+  border: 1px solid #d1dcc8;
+  border-radius: 8px;
+  background: #f1f5ed;
+}
+.november-campaign h3 { margin: 0; font-size: clamp(19px, 2.8vw, 24px); }
+.november-campaign p { margin: 3px 0 0; }
+.inventory-offer {
+  display: grid;
+  gap: 1px;
+  margin: 0 0 12px;
+  padding: 9px 12px;
+  border-radius: 5px;
+  background: #f1f5ed;
+  color: #2d542c;
+}
+.inventory-offer small { font-weight: 650; }
+.inventory-offer strong { font-size: 14px; }
+.inventory-offer p { margin: 2px 0 0; font-size: 12px; }
+.inventory-section .inventory-offer { background: #e9f0e4; }
+.team-campaign { color: #2d542c; font-weight: 650; }
