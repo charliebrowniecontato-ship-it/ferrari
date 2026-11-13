@@ -4,6 +4,23 @@ from urllib.parse import quote
 import json,re,shutil,xml.etree.ElementTree as ET
 from PIL import Image
 BASE='https://ferrariassessoria.com'
+META_PIXEL_SCRIPT='''<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1644053697266484');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->'''
+META_PIXEL_NOSCRIPT='''<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1644053697266484&amp;ev=PageView&amp;noscript=1"
+/></noscript>'''
 OUT=Path('dist');source=Path('src/home.html').read_text();props=json.loads((OUT/'properties.json').read_text());byid={p['id']:p for p in props};ORDER=['sinfonia','atlas','vision','line-praca','mob-barra','origem','mob-campo','iconico','line-parada','serena','altus','villagio','view','nostro'];ordered=[byid[i] for i in ORDER]
 wa=lambda msg:'https://wa.me/5511932362552?text='+quote(msg,safe='')
 pageurl=lambda p:BASE+'/imoveis/'+p['id']+'/'
@@ -33,6 +50,7 @@ def makehead(title,description,path='/',image='sinfonia',schema=None):
 <link rel="preload" as="font" href="/assets/inter.woff2" type="font/woff2" crossorigin>{preload}
 <link rel="stylesheet" href="/styles.css"><script src="/site-ui.js" defer></script>
 {jsonld(schema) if schema else ''}
+{META_PIXEL_SCRIPT}
 </head>'''
 # build_media.py produces JPEG social cards and responsive WebP variants first.
 assert (OUT/'assets/og-ferrari-v2.jpg').is_file(), 'Run python build_media.py first.'
@@ -83,7 +101,7 @@ for p in props:
  md=f"# {p['name']}\n\n{p['description']}\n\n- Região: {p['regionLabel']}, {p['city']}.\n- Bairro: {p['neighborhood']}.\n- Plantas: {rooms}.\n- Metragem informada no book: {p['area']} m².\n- Fase: {p['status']}.\n- Entrega prevista: {p['delivery'] or 'Confirmar com o atendimento'}.\n- Diferencial: {p['highlight']}.\n\n## Lazer e conveniências\n\n"+'\n'.join('- '+a for a in p['amenities'])+f"\n\n## Atendimento\n\n- [Página do empreendimento]({pageurl(p)})\n- [Consultar condições pelo WhatsApp]({contact})\n\n{notes}\n"
  (target/'index.md').write_text(md)
 # Privacy is a real static page as well as the existing home dialog.
-privacy='''<main class="wrap privacy-page" id="inicio"><p class="eyebrow"><span></span> PRIVACIDADE</p><h1>Uma conversa transparente.</h1><p>Este site apresenta imóveis e direciona o visitante para atendimento externo. O roteiro de atendimento monta um resumo no seu navegador: nada é enviado automaticamente ao atendimento e não há análise de crédito.</p><h2>Favoritos neste navegador</h2><p>Os imóveis favoritos ficam armazenados somente no navegador utilizado. Você pode apagá-los na opção Privacidade da página inicial ou nas configurações do seu navegador. Não são enviados para um servidor do site.</p><h2>Contato e serviços externos</h2><p>Ao acessar WhatsApp, Instagram, mapas, tours ou materiais dos empreendimentos, você utiliza serviços externos, que possuem suas próprias políticas de privacidade. Informações enviadas pelo WhatsApp são compartilhadas diretamente por você com o atendimento.</p><h2>Roteiro de atendimento</h2><p>As preferências preenchidas são usadas apenas para montar a mensagem que você pode revisar e enviar pelo WhatsApp. Elas não são salvas em cookies, no armazenamento local ou em um banco de dados deste site. As informações financeiras são opcionais. O roteiro não aprova crédito, não calcula subsídios nem garante financiamento.</p><h2>Cadastro de imobiliárias parceiras</h2><p>Quando o envio estiver ativo, as informações da imobiliária, do responsável e os documentos anexados serão usados pela Equipe Ferrari para analisar o cadastro e entrar em contato. Os documentos ficam em uma pasta de acesso restrito; o aviso de recebimento, com os documentos anexados, é enviado ao e-mail configurado pela equipe. O envio não aprova automaticamente a parceria. Solicitações de acesso, correção ou exclusão podem ser feitas ao atendimento. O cadastro não envia arquivos enquanto o serviço estiver em preparação.</p><h2>Suas escolhas</h2><p>Você pode navegar pelo catálogo sem informar seus dados pessoais. Se tiver dúvidas sobre informações compartilhadas com o atendimento, entre em contato pelo WhatsApp comercial (11) 93236-2552.</p><a class="btn btn-red" href="/">Voltar ao site <i data-icon="arrow-right"></i></a></main>'''
+privacy='''<main class="wrap privacy-page" id="inicio"><p class="eyebrow"><span></span> PRIVACIDADE</p><h1>Uma conversa transparente.</h1><p>Este site apresenta imóveis e direciona o visitante para atendimento externo. O roteiro de atendimento monta um resumo no seu navegador: nada é enviado automaticamente ao atendimento e não há análise de crédito.</p><h2>Favoritos neste navegador</h2><p>Os imóveis favoritos ficam armazenados somente no navegador utilizado. Você pode apagá-los na opção Privacidade da página inicial ou nas configurações do seu navegador. Não são enviados para um servidor do site.</p><h2>Contato e serviços externos</h2><p>Ao acessar WhatsApp, Instagram, mapas, tours ou materiais dos empreendimentos, você utiliza serviços externos, que possuem suas próprias políticas de privacidade. Informações enviadas pelo WhatsApp são compartilhadas diretamente por você com o atendimento.</p><h2>Roteiro de atendimento</h2><p>As preferências preenchidas são usadas apenas para montar a mensagem que você pode revisar e enviar pelo WhatsApp. Elas não são salvas em cookies, no armazenamento local ou em um banco de dados deste site. As informações financeiras são opcionais. O roteiro não aprova crédito, não calcula subsídios nem garante financiamento.</p><h2>Cadastro de imobiliárias parceiras</h2><p>Quando o envio estiver ativo, as informações da imobiliária, do responsável e os documentos anexados serão usados pela Equipe Ferrari para analisar o cadastro e entrar em contato. Os documentos ficam em uma pasta de acesso restrito; o aviso de recebimento, com os documentos anexados, é enviado ao e-mail configurado pela equipe. O envio não aprova automaticamente a parceria. Solicitações de acesso, correção ou exclusão podem ser feitas ao atendimento. O cadastro não envia arquivos enquanto o serviço estiver em preparação.</p><h2>Medição de visitas e anúncios</h2><p>Utilizamos o Meta Pixel (ID 1644053697266484) para registrar visualizações de página e medir o desempenho dos anúncios. O recurso pode usar cookies e compartilhar informações de navegação com a Meta. O código instalado registra o evento PageView; não envia as respostas do roteiro de atendimento nem os documentos de cadastro como parâmetros desse evento.</p><h2>Suas escolhas</h2><p>Você pode navegar pelo catálogo sem informar seus dados pessoais. Se tiver dúvidas sobre informações compartilhadas com o atendimento, entre em contato pelo WhatsApp comercial (11) 93236-2552.</p><a class="btn btn-red" href="/">Voltar ao site <i data-icon="arrow-right"></i></a></main>'''
 pt=OUT/'privacidade';pt.mkdir(exist_ok=True);(pt/'index.html').write_text(absolute_assets('<!doctype html><html lang="pt-BR">'+makehead('Privacidade | Ferrari Assessoria Imobiliária','Entenda como funcionam os favoritos locais e os links de atendimento da Ferrari Assessoria Imobiliária.','/privacidade/')+'<script src="/property-page.js" defer></script><body>'+header+privacy+footer+'</body></html>'))
 # A host-supported custom 404 does not send visitors to a broken app shell.
 notfound='''<main class="wrap not-found" id="inicio"><p class="eyebrow"><span></span> ENDEREÇO NÃO ENCONTRADO</p><h1>Vamos encontrar<br>outro caminho?</h1><p>Essa página não está disponível. Seu próximo imóvel pode estar no nosso catálogo.</p><a class="btn btn-red" href="/#imoveis">Explorar os imóveis <i data-icon="arrow-right"></i></a></main>'''
@@ -113,6 +131,8 @@ print(f'Built home, {len(props)} property pages, privacy, 404, sitemap, robots a
 # Keep deferred page scripts in the document head for valid document structure.
 for path in OUT.rglob('*.html'):
  text=path.read_text().replace('</head>'+page_js,page_js+'</head>')
+ # The image fallback belongs in the body, outside the head's noscript restrictions.
+ text=re.sub(r'(<body\b[^>]*>)',lambda match:match.group()+META_PIXEL_NOSCRIPT,text,count=1)
  # Preserve real, indexable heading text and the approved manual line breaks.
  def heading(match):
   level,attrs,content=match.groups()
