@@ -16,7 +16,7 @@ Portfólio Ferrari EMCCAMP, edição setembro/2026, e captura do site EMCCAMP fo
 
 ## Operação
 
-WhatsApp comercial: +55 11 93236-2552. Instagram: @ferraricorretagem.
+WhatsApp comercial: +55 11 95490-9531. Instagram: @ferraricorretagem.
 Os contatos são iniciados pelo visitante em links externos, sem backend de coleta. O formulário de preparação monta uma mensagem no navegador, revisada pelo visitante antes de abrir o WhatsApp; não persiste respostas nem avalia crédito. Favoritos permanecem apenas no navegador do visitante. A busca guiada filtra o catálogo; não realiza análise ou simulação de crédito.
 
 ## Verificação

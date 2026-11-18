@@ -22,7 +22,7 @@ if(planningForm){
   lines.push('','Podem me orientar sobre disponibilidade e próximos passos?');
   const message=lines.join('\n');
   document.getElementById('planning-summary').textContent=message;
-  document.getElementById('planning-send').href='https://wa.me/5511932362552?text='+encodeURIComponent(message);
+  document.getElementById('planning-send').href='https://wa.me/5511954909531?text='+encodeURIComponent(message);
  };
  const showStep=()=>{
   fields.forEach((field,index)=>field.hidden=index!==step);

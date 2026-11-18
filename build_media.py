@@ -67,7 +67,7 @@ def main():
         prop['responsive'] = variants
         social_card(photo, prop['name'], prop['neighborhood'] + ' · ' + prop['city'] + ' | ' + prop['area'] + ' m²', ASSETS / f"social-{prop['id']}-r3.jpg")
         if prop['id'] == 'sinfonia':
-            social_card(photo, 'Seu próximo capítulo começa em casa.', 'Imóveis em São Paulo e Jundiaí. Conheça as possibilidades com a Ferrari.', ASSETS / 'og-ferrari-v2.jpg', home=True)
+            social_card(photo, 'Seu próximo capítulo começa em casa.', 'Imóveis em São Paulo e Jundiaí. Conheça as possibilidades com o Ferrari.', ASSETS / 'og-ferrari-v2.jpg', home=True)
     CATALOG.write_text(json.dumps(props, ensure_ascii=False, indent=2) + '\n')
     logo = Image.open(ASSETS / 'ferrari-logo.png').convert('RGBA')
     for size, name in [(180, 'apple-touch-icon.png'), (512, 'icon-512.png')]:

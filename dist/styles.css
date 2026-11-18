@@ -111,3 +111,41 @@
 .inventory-offer p { margin: 2px 0 0; font-size: 12px; }
 .inventory-section .inventory-offer { background: #e9f0e4; }
 .team-campaign { color: #2d542c; font-weight: 650; }
+
+/* Ferrari's personal introduction and Instagram profile. */
+.about-ferrari .about-grid { grid-template-columns: .95fr 1.05fr; gap: clamp(32px, 5vw, 72px); }
+.about-ferrari .ferrari-portrait { margin: 0; height: auto; aspect-ratio: 1; overflow: hidden; border-radius: 5px; align-self: start; }
+.about-ferrari .ferrari-portrait > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.ferrari-portrait figcaption { position: absolute; inset: auto 0 0; padding: 50px 28px 25px; background: linear-gradient(transparent, #171b19e6); color: #fff; display: grid; gap: 3px; }
+.ferrari-portrait figcaption strong { font-size: 27px; font-weight: 550; letter-spacing: -.6px; }
+.ferrari-portrait figcaption span { font-size: 12px; }
+.about-ferrari .about-copy { min-width: 0; }
+.about-ferrari .about-copy h2 { font-size: clamp(34px, 4vw, 46px); }
+.about-ferrari .about-copy > p:not(.eyebrow) { font-size: 14px; line-height: 1.85; margin-top: 18px; }
+.about-ferrari .about-copy > .about-intro { font-size: 19px; line-height: 1.5; color: #303b32; letter-spacing: -.35px; }
+.about-ferrari .about-principles { font-size: 12px; gap: 8px; margin: 22px 0; }
+.about-contact { margin-bottom: 24px; }
+.instagram-profile { display: flex; align-items: center; gap: 15px; padding: 19px; background: #fff; border: 1px solid #dfe4d9; border-radius: 5px; transition: border-color .2s, box-shadow .2s; }
+.instagram-profile:hover { border-color: #bd242c; box-shadow: 0 5px 20px #24262408; }
+.instagram-profile > img { width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0; object-fit: cover; }
+.instagram-profile-copy { display: grid; gap: 4px; min-width: 0; flex: 1; }
+.instagram-profile-label { display: flex; gap: 6px; align-items: center; font-size: 9px; font-weight: 600; letter-spacing: 1px; color: #a82a30; }
+.instagram-profile-label .icon { width: 14px; height: 14px; }
+.instagram-profile-copy strong { font-size: 15px; font-weight: 600; overflow-wrap: anywhere; }
+.instagram-profile-copy > span:last-child { font-size: 11px; color: #65715b; }
+.instagram-profile > .icon { width: 19px; height: 19px; color: #a82a30; }
+@media (max-width: 900px) {
+  .about-ferrari .about-grid { grid-template-columns: 1fr; max-width: 680px; gap: 36px; }
+  .about-ferrari .ferrari-portrait { width: 100%; max-width: 520px; }
+}
+@media (max-width: 600px) {
+  .about-ferrari .about-copy .eyebrow { font-size: 8px; letter-spacing: 1.2px; }
+  .about-ferrari .about-copy > p:not(.eyebrow) { font-size: 14px; }
+  .about-ferrari .about-copy > .about-intro { font-size: 18px; }
+  .about-contact { width: 100%; }
+  .instagram-profile { gap: 11px; padding: 16px 13px; }
+  .instagram-profile-label { font-size: 8px; letter-spacing: .45px; }
+  .instagram-profile-copy strong { font-size: 14px; }
+  .instagram-profile-copy > span:last-child { font-size: 10px; }
+  .instagram-profile > img { width: 48px; height: 48px; }
+}

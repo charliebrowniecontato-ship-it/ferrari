@@ -60,7 +60,9 @@ for path in root.rglob('*'):
  if path.is_file() and path.suffix in ['.html','.js','.json','.txt','.md']:
   text=path.read_text()
   assert '99379' not in text,(path,'old phone')
-  for number in re.findall(r'wa\.me/(\d+)',text):assert number=='5511932362552',(path,number)
+  assert '93236' not in text,(path,'old lead phone')
+  for number in re.findall(r'wa\.me/(\d+)',text):assert number=='5511954909531',(path,number)
+  for number in re.findall(r'tel:\+?(\d+)',text):assert number=='5511954909531',(path,number)
 assert all('/assets/materiais/' in str(p) for p in root.rglob('*.pdf')), 'PDF outside the approved commercial library'
 manifest=json.loads(Path('team-materials.json').read_text())
 assert {p['id'] for p in manifest['properties']}=={p['id'] for p in props}, 'Missing property materials'
@@ -73,4 +75,4 @@ for material in manifest['properties']:
   assert len(fitz.open(file))==item['pages'],file
   if item.get('publishedSha256'):assert hashlib.sha256(file.read_bytes()).hexdigest()==item['publishedSha256'],(file,'published PDF changed')
   if kind=='tabela':assert hashlib.sha256(file.read_bytes()).hexdigest()==item['sha256'],(file,'sales table changed')
-print('PASS: 14 reviewed property records; media dimensions; institutional WhatsApp; commercial PDFs confined to the dated library; sales tables preserved byte for byte.')
+print('PASS: 14 reviewed property records; media dimensions; direct Ferrari WhatsApp; commercial PDFs confined to the dated library; sales tables preserved byte for byte.')
