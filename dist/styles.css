@@ -83,34 +83,70 @@
   .inventory-option div:last-child { text-align: left; }
 }
 
+/* Black Friday: restrained black campaign surfaces with Ferrari red accents. */
+.topbar { background: #0c0c0d; color: #f3f3f3; }
+.topbar .wrap { height: 35px; }
+.topbar .seasonal-promo { gap: 7px; font-size: 10px; letter-spacing: .4px; }
+.seasonal-promo strong { letter-spacing: 1.2px; }
+.seasonal-promo:hover { text-decoration: underline; text-underline-offset: 4px; }
+.hero-black-friday { background: #111; }
+.hero-black-friday .hero-shade { background: linear-gradient(90deg,#101011 0%,#101011fa 22%,#101011c7 39%,#1010110f 74%),linear-gradient(0deg,#080809b3,transparent 42%); }
+.hero-black-friday .black-friday-tag { display: inline-flex; padding: 9px 12px; border: 1px solid #ffffff45; border-radius: 3px; background: #0c0c0d70; color: #fff; opacity: 1; }
+.black-friday-tag > span { background: #ed535b; }
 .november-campaign {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 14px 24px;
-  padding: clamp(16px, 3vw, 25px);
+  gap: 20px 28px;
+  padding: clamp(24px, 3.3vw, 40px);
   margin-bottom: 24px;
-  border: 1px solid #d1dcc8;
-  border-radius: 8px;
-  background: #f1f5ed;
+  border: 1px solid #252527;
+  border-radius: 6px;
+  background: #101011;
+  color: #fff;
+  box-shadow: inset 4px 0 #bd242c;
 }
-.november-campaign h3 { margin: 0; font-size: clamp(19px, 2.8vw, 24px); }
-.november-campaign p { margin: 3px 0 0; }
+.november-campaign .campaign-kicker { margin: 0 0 12px; font-size: 10px; font-weight: 650; letter-spacing: 1.8px; color: #d7d7d9; }
+.november-campaign h3 { margin: 0 0 10px; font-size: clamp(20px, 2.8vw, 29px); font-weight: 550; letter-spacing: -.6px; }
+.november-campaign .campaign-discount { margin: 0; font-size: clamp(16px, 2vw, 22px); line-height: 1.4; color: #f0f0f1; }
+.campaign-discount strong { display: inline-block; margin-left: 6px; font-size: clamp(29px, 4.5vw, 46px); font-weight: 750; letter-spacing: -1.6px; line-height: 1.2; color: #fff; }
+.november-campaign .campaign-terms { margin: 12px 0 0; font-size: 11px; line-height: 1.6; color: #c5c5c8; }
+.november-campaign .btn { background: #fff; border-color: #fff; color: #111; flex-shrink: 0; }
+.november-campaign .btn:hover { background: #ececee; border-color: #ececee; }
+.november-campaign .btn[aria-pressed="true"] { background: #252527; border-color: #777; color: #fff; }
 .inventory-offer {
   display: grid;
-  gap: 1px;
+  gap: 4px;
   margin: 0 0 12px;
-  padding: 9px 12px;
-  border-radius: 5px;
-  background: #f1f5ed;
-  color: #2d542c;
+  padding: 13px 14px;
+  border-radius: 4px;
+  border-left: 3px solid #bd242c;
+  background: #111112;
+  color: #fff;
 }
-.inventory-offer small { font-weight: 650; }
-.inventory-offer strong { font-size: 14px; }
-.inventory-offer p { margin: 2px 0 0; font-size: 12px; }
-.inventory-section .inventory-offer { background: #e9f0e4; }
-.team-campaign { color: #2d542c; font-weight: 650; }
+.inventory-offer small { font-size: 10px; font-weight: 600; letter-spacing: .5px; color: #d5d5d8; }
+.inventory-offer strong { font-size: 17px; line-height: 1.4; color: #fff; }
+.inventory-offer p { margin: 2px 0 0; font-size: 12px; line-height: 1.7; color: #d5d5d8; }
+.inventory-section .inventory-offer { background: #111112; }
+.inventory-section .inventory-offer strong { color: #fff; }
+.team-campaign { padding: 10px 12px; border-left: 3px solid #bd242c; border-radius: 3px; background: #111112; color: #fff !important; font-weight: 600; }
+.active-filters > [data-remove-filter="campaign"] { background: #111112; border-color: #111112; color: #fff; }
+@media (max-width: 900px) {
+  .hero-black-friday .hero-shade { background: linear-gradient(90deg,#101011f2,#101011c7 45%,#10101120),linear-gradient(0deg,#080809c9,transparent 60%); }
+}
+@media (max-width: 600px) {
+  .topbar .wrap { height: 34px; gap: 12px; }
+  .topbar .wrap > span:first-child { display: none; }
+  .topbar .seasonal-promo { font-size: 9px; letter-spacing: 0; }
+  .seasonal-promo strong { letter-spacing: .7px; }
+  .topbar .seasonal-promo .icon { display: none; }
+  .hero-black-friday .black-friday-tag { font-size: 8px; letter-spacing: 1.2px; padding: 8px 10px; }
+  .november-campaign { padding: 25px 22px; gap: 22px; }
+  .november-campaign .campaign-kicker { font-size: 9px; letter-spacing: 1.2px; }
+  .campaign-discount strong { display: block; margin: 5px 0 0; font-size: 40px; }
+  .november-campaign .btn { width: 100%; }
+}
 
 /* Ferrari's personal introduction and Instagram profile. */
 .about-ferrari .about-grid { grid-template-columns: .95fr 1.05fr; gap: clamp(32px, 5vw, 72px); }
